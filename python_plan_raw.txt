@@ -1,0 +1,1880 @@
+
+--- PAGE 1 ---
+C O D E Q U E S T  A C A D E M Y
+The Python
+3-Month Quest
+A complete day-by-day adventure that teaches Python from absolute
+zero — explained in very easy words, with a playable game level
+and an AI image prompt for every single day.
+60 Daily Lessons
+12 Weekly Quests
+60 Game Levels
+60 Art Prompts
+Beginner Friendly
+A gamified learning workbook — Learn by playing.
+Part of the CodeQuest Academy curriculum series · Python Track
+
+--- PAGE 2 ---
+How This Quest Works
+Welcome, adventurer. This workbook turns learning Python into a 12-week role-playing game. Here is
+everything you need to know before Day 1.
+The Structure
+Your journey is 3 months long, split into 12 weeks. Each week is a themed quest with 5 daily lessons — that
+is 60 days of Python in total. Do one day at a time; never rush. Mastery beats speed.
+What Every Day Contains
+Section
+What it is
+What You Will Learn
+The day's idea explained in very simple, friendly words — as if a patient friend were
+teaching you.
+Code Example
+A short, real Python program showing the idea in action. Type it yourself — do not just read
+it.
+Today's Game Level
+A playable RPG level idea. It has a goal, a setup, and a win condition your code must
+achieve.
+Image Generation
+Prompt
+A ready-to-use prompt. Paste it into any AI image tool to create the artwork for that day's
+game level.
+How to Use the Game Levels
+The game levels are the heart of CodeQuest. Each one describes a small puzzle the hero must solve using
+the day's new skill. You can play them three ways:
+Imagine & solve: read the level, then write Python code that would satisfy the win condition. This works
+with just paper or any code editor.
+Build it: if you are using the CodeQuest platform, the level becomes a real playable puzzle on a 2D grid.
+Draw it: use the image prompt to generate the level art and collect a visual badge for every day you
+complete.
+XP & Streaks: Give yourself +50 XP for finishing a day and +250 XP for a Friday boss level. Keep a daily streak
+— the habit matters more than any single lesson.
+Golden Rule: If something does not make sense, that is normal and good. Re-read it slowly, type the code,
+change one thing, and see what happens. Curiosity is your strongest weapon.
+When you finish this Python track, the Java track awaits — a second 3-month quest in the CodeQuest series.
+• 
+• 
+• 
+CodeQuest Academy · Page 2 of 66
+
+--- PAGE 3 ---
+Map of the Quest
+Your full 60-day path through Python. Each week is one themed quest.
+Month 1 · Week 1 — Getting Started with Python
+Day 01   What is Programming & Your First Print
+Day 02   Variables — Boxes That Hold Things
+Day 03   Numbers and Math
+Day 04   Text (Strings) Basics
+Day 05   Comments & Getting Input from the User
+Month 1 · Week 2 — Working with Data
+Day 06   Talking to the User (input recap + planning)
+Day 07   Changing Data Types (Type Conversion)
+Day 08   String Superpowers (Methods & f-strings)
+Day 09   More Math (Operators & Order)
+Day 10   Mini Project — The Greeting Robot
+Month 1 · Week 3 — Making Decisions
+Day 11   True and False (Booleans)
+Day 12   Comparing Things
+Day 13   The if Statement
+Day 14   if / elif / else
+Day 15   Combining Conditions (and, or, not)
+Month 1 · Week 4 — Loops — Doing Things Again and Again
+Day 16   The while Loop
+Day 17   The for Loop and range()
+Day 18   break and continue
+Day 19   Loop Patterns (Counters & Totals)
+Day 20   Mini Project — Number Guessing Game
+Month 2 · Week 5 — Lists — Your First Collection
+CodeQuest Academy · Page 3 of 66
+
+--- PAGE 4 ---
+Day 21   What is a List?
+Day 22   Reaching Into Lists (Indexing)
+Day 23   Changing Lists (Add & Remove)
+Day 24   Slicing Lists
+Day 25   Looping Through Lists
+Month 2 · Week 6 — More Ways to Store Data
+Day 26   Tuples — Lists That Cannot Change
+Day 27   Dictionaries — Labels and Values
+Day 28   Working With Dictionaries
+Day 29   Sets — Collections With No Duplicates
+Day 30   Mini Project — The Inventory Tracker
+Month 2 · Week 7 — Functions — Reusable Blocks of Code
+Day 31   What is a Function?
+Day 32   Giving Functions Inputs (Parameters)
+Day 33   Getting Answers Back (return)
+Day 34   Default Values & Keyword Arguments
+Day 35   Scope — Where Variables Live
+Month 2 · Week 8 — Functions Deep + Handling Errors
+Day 36   *args and **kwargs
+Day 37   Lambda — Tiny Functions
+Day 38   Recursion — Functions That Call Themselves
+Day 39   Errors and Exceptions
+Day 40   Mini Project — The Calculator Toolkit
+Month 3 · Week 9 — Object-Oriented Programming
+Day 41   What is an Object?
+Day 42   Building a Class
+Day 43   The __init__ Method
+CodeQuest Academy · Page 4 of 66
+
+--- PAGE 5 ---
+Day 44   Methods — Things Objects Can Do
+Day 45   Making Many Objects
+Month 3 · Week 10 — OOP Power-Ups
+Day 46   Inheritance — Passing Down Traits
+Day 47   Overriding and super()
+Day 48   Polymorphism
+Day 49   Encapsulation (Protecting Data)
+Day 50   Magic / Dunder Methods
+Month 3 · Week 11 — Files, Modules & Libraries
+Day 51   Reading Files
+Day 52   Writing Files
+Day 53   Modules — Borrowing Code
+Day 54   Useful Built-in Libraries
+Day 55   JSON — Saving Structured Data
+Month 3 · Week 12 — Final Quest — Build Real Programs
+Day 56   Planning a Program
+Day 57   Building the Logic
+Day 58   Polishing & Error-Proofing
+Day 59   Capstone — The Text Adventure Engine
+Day 60   Graduation — Review & What's Next
+CodeQuest Academy · Page 5 of 66
+
+--- PAGE 6 ---
+M O N T H  1  ·  W E E K  1
+Getting Started with Python
+Welcome, new coder! This week you will write your very first lines of Python. We start from absolute zero — no
+experience needed. By Friday you will be printing messages and storing information in your programs.
+DAY 01
+What is Programming & Your First Print
+■ W H AT  Y O U  W I L L L E A R N
+A computer is like a very fast helper that only does exactly what you tell it. Programming is writing those
+instructions in a language the computer understands. Python is one of the easiest languages to learn — it
+reads almost like English.
+Your first instruction is print() . It tells Python: "show this message on the screen." Whatever you put
+inside the quotation marks appears as text. Quotes tell Python "this is words, not a command."
+Think of print()  as the computer speaking out loud. Every big program — games, apps, websites — is
+built from tiny clear steps like this one.
+■ C O D E  E X A M P L E
+# This is your first Python program
+print("Hello, world!")
+print("I am learning to code.")
+Each line is one instruction. Python runs them top to bottom.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Awakening
+Goal: Make your robot hero say its first words to wake up the village.
+Setup: A 5x5 grid. Your robot stands still in the center. A sign reads: 'Speak to begin.'
+Win Condition: Call print("I am awake") so the speech bubble appears above the robot. The gate to the next
+level opens.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art scene of a small friendly robot standing in the center of a glowing 5x5 grid at
+night, a single speech bubble above its head reading 'Hello world', dark navy IDE-style
+background with faint cyan grid lines, soft neon teal glow, retro 16-bit game aesthetic,
+isometric view.
+CodeQuest Academy · Page 6 of 66
+
+--- PAGE 7 ---
+DAY 02
+Variables — Boxes That Hold Things
+■ W H AT  Y O U  W I L L L E A R N
+A variable is a labeled box where you store a piece of information so you can use it later. You create one
+with the =  sign: the name goes on the left, the value goes on the right.
+For example, name = "Sara"  puts the word Sara into a box labelled name . Later you just say name
+and Python brings back what's inside.
+You can change what's in the box any time — that is why it is called a variable (it can vary). Good box
+names are short and describe what they hold, like score  or player_name .
+■ C O D E  E X A M P L E
+name = "Sara"
+age = 12
+print(name)
+print("You are", age, "years old")
+Notice: text needs quotes, numbers do not.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Memory Crystal
+Goal: Store the secret keyword in a crystal and show it to the gatekeeper.
+Setup: A locked door with a crystal pedestal. The gatekeeper asks for the password 'STARLIGHT'.
+Win Condition: Create a variable password = "STARLIGHT" then print(password). The door glows and
+unlocks.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art glowing crystal on a stone pedestal with a labeled box icon floating beside it
+showing the word 'STARLIGHT', a robot hero looking up, dark dungeon background with neon
+cyan and purple lighting, 16-bit RPG style, clean educational diagram feel.
+CodeQuest Academy · Page 7 of 66
+
+--- PAGE 8 ---
+DAY 03
+Numbers and Math
+■ W H AT  Y O U  W I L L L E A R N
+Python is a great calculator. It works with two kinds of numbers: integers (whole numbers like 7) and 
+floats (numbers with a decimal point like 3.5).
+The math symbols are simple: +  add, -  subtract, *  multiply, /  divide. You can store the result of a
+calculation directly in a variable.
+You can also do math using variables. If coins = 10 , then coins + 5  gives 15. The computer never
+gets tired of counting!
+■ C O D E  E X A M P L E
+apples = 8
+friends = 4
+each = apples / friends
+print("Each friend gets", each, "apples")
+Division with / always gives a float (4.0, not 4).
+■ TO D AY ' S  G A M E  L E V E L
+★ The Coin Bridge
+Goal: Calculate the exact number of coins needed to build a bridge.
+Setup: A broken bridge with 6 gaps. Each plank costs 3 coins. A treasure chest sits across the gap.
+Win Condition: Compute total = 6 * 3 and print(total). When 18 is shown, the planks appear one by one.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art broken wooden bridge over a glowing chasm, six glowing gap markers, stacks of
+golden coins, a small robot calculating with floating numbers '6 x 3 = 18' above it, dark
+cyan canyon, neon math symbols, retro 16-bit RPG art.
+CodeQuest Academy · Page 8 of 66
+
+--- PAGE 9 ---
+DAY 04
+Text (Strings) Basics
+■ W H AT  Y O U  W I L L L E A R N
+Any text in Python is called a string — letters, words, even emojis, all wrapped in quotes. You can use
+double ""  or single ''  quotes; just be consistent.
+You can join strings together with + . This is called concatenation. "Hello " + "there"  becomes 
+"Hello there" . Notice the space inside the quotes — Python adds nothing extra for you.
+You can also repeat a string with * . "ha" * 3  gives "hahaha" .
+■ C O D E  E X A M P L E
+first = "Code"
+last = "Quest"
+title = first + " " + last
+print(title)
+print("-" * 9)
+The line of dashes is made by repeating a string.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Spell Scroll
+Goal: Combine two magic words into one powerful spell.
+Setup: Two glowing word-runes float in a chamber: 'FIRE' and 'STORM'. A dragon blocks the exit.
+Win Condition: Join them: spell = "FIRE" + "STORM" and print it. The combined spell 'FIRESTORM' defeats
+the obstacle.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art magic chamber with two floating glowing runes 'FIRE' and 'STORM' merging into one
+bright rune 'FIRESTORM', a robot wizard hero raising a staff, dark purple stone walls, neon
+orange and teal magic glow, 16-bit RPG aesthetic.
+CodeQuest Academy · Page 9 of 66
+
+--- PAGE 10 ---
+DAY 05
+Comments & Getting Input from the User
+■ W H AT  Y O U  W I L L L E A R N
+A comment is a note for humans that Python ignores. Start it with # . Comments explain why your code
+does something — they make your program easier to understand later.
+To make a program interactive, use input() . It pauses the program, waits for the user to type
+something, and hands that text back to you. You usually store it in a variable.
+Important: input()  always gives you a string, even if the user types numbers. We will fix that next
+week.
+■ C O D E  E X A M P L E
+# Ask the player for their name
+name = input("What is your name? ")
+print("Welcome, " + name + "!")
+The text inside input() is the question shown to the user.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Gatekeeper's Question
+Goal: Answer the gatekeeper by collecting the player's name and greeting them.
+Setup: A tall gate with a talking statue. It will not open until it knows who you are.
+Win Condition: Use input() to capture a name, then print a greeting that includes it. The statue smiles and the
+gate rises.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art giant stone gatekeeper statue with glowing eyes asking a question, a small robot
+hero typing on a floating keyboard, an input text box hovering in the air, dark temple
+entrance, neon teal and gold light, 16-bit RPG style.
+CodeQuest Academy · Page 10 of 66
+
+--- PAGE 11 ---
+M O N T H  1  ·  W E E K  2
+Working with Data
+Now that you can store and show information, this week is about shaping it: turning text into numbers, polishing
+strings, and doing real calculations. You finish with your first complete mini program.
+DAY 06
+Talking to the User (input recap + planning)
+■ W H AT  Y O U  W I L L L E A R N
+A real program is a conversation. It asks, the user answers, and the program responds. Today we
+practise that loop carefully.
+Always make your input()  question clear and end it with a space, so the user's typing does not stick to
+your question. Store every answer in a well-named variable.
+Before writing code, say the plan out loud: "ask for the city, then ask for the day, then print a sentence
+using both." Planning in plain words first is a habit of every good programmer.
+■ C O D E  E X A M P L E
+city = input("Which city? ")
+day = input("Which day? ")
+print("See you in " + city + " on " + day + "!")
+Two questions, two variables, one combined answer.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Travel Portal
+Goal: Collect a destination and a time, then power the portal.
+Setup: A swirling portal needs two crystals: a 'place' crystal and a 'time' crystal.
+Win Condition: Ask the user for a place and a time, store both, and print the travel message. The portal
+activates.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art glowing circular portal with two empty crystal slots labelled 'PLACE' and 'TIME',
+a robot hero holding two glowing crystals, swirling neon energy, dark stone platform, 16-
+bit RPG aesthetic, cyan and magenta glow.
+CodeQuest Academy · Page 11 of 66
+
+--- PAGE 12 ---
+DAY 07
+Changing Data Types (Type Conversion)
+■ W H AT  Y O U  W I L L L E A R N
+Remember: input()  always gives a string. If the user types 5 , Python sees the text "5", not the
+number 5. You cannot do math on text.
+To fix this, convert it. int()  turns text into a whole number. float()  turns it into a decimal number. 
+str()  turns a number back into text.
+This is like translating between two languages so the parts of your program can understand each other.
+■ C O D E  E X A M P L E
+age_text = input("Your age? ")
+age = int(age_text)
+next_year = age + 1
+print("Next year you will be", next_year)
+int() unlocks math; without it, age + 1 would crash.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Number Forge
+Goal: Forge a raw text-ingot into a real number to fuel the machine.
+Setup: A forge accepts only true numbers. The player drops in a text-ingot that looks like a number.
+Win Condition: Convert the input with int(), add 1, and print the result. The forge accepts the glowing number.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art glowing forge with a conveyor belt, a dull grey 'text' ingot transforming into a
+bright golden 'number' ingot, a robot blacksmith hero, dark workshop, neon orange furnace
+glow, 16-bit RPG style educational diagram.
+CodeQuest Academy · Page 12 of 66
+
+--- PAGE 13 ---
+DAY 08
+String Superpowers (Methods & f-strings)
+■ W H AT  Y O U  W I L L L E A R N
+Strings come with built-in methods — little actions you attach with a dot. .upper()  shouts in capitals,
+.lower()  whispers in small letters, .strip()  removes extra spaces, and .title()  Capitalises Each
+Word.
+The best way to build sentences is an f-string. Put an f  before the quotes, then drop variables straight
+inside { } . No more messy +  signs.
+■ C O D E  E X A M P L E
+name = input("Name? ").strip().title()
+print(f"Hello, {name}! Your name has {len(name)} letters.")
+f-strings make text clean and easy to read.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Echo Cavern
+Goal: Repair a messy magic word so the echo spell works.
+Setup: A cavern echoes only with a perfectly formatted word. The given word has stray spaces and wrong
+case.
+Win Condition: Clean the word with .strip() and .title(), then print it in an f-string. The cavern echoes clearly.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art crystal cavern with sound-wave rings, a messy glitchy word floating then becoming
+a clean glowing word, a robot hero with headphones, dark blue cave, neon teal sound
+ripples, 16-bit RPG aesthetic.
+CodeQuest Academy · Page 13 of 66
+
+--- PAGE 14 ---
+DAY 09
+More Math (Operators & Order)
+■ W H AT  Y O U  W I L L L E A R N
+Beyond the basics, Python has three more handy operators. **  means power ( 2 ** 3  = 8). //  is 
+floor division — it divides and throws away the remainder. %  (modulo) gives you only the remainder.
+Modulo is secretly very useful: number % 2  is 0 for even numbers and 1 for odd ones. You will use it
+constantly.
+Python follows math order: brackets first, then powers, then multiply/divide, then add/subtract.
+■ C O D E  E X A M P L E
+total = 17
+boxes = total // 5
+leftover = total % 5
+print(f"{boxes} full boxes, {leftover} left over")
+// and % work as a team to split things into groups.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Treasure Split
+Goal: Divide treasure into equal chests and find the leftover gems.
+Setup: 17 gems must be packed into chests of 5. The leftover gems unlock a secret room.
+Win Condition: Use // to count full chests and % to find leftovers, then print both. The secret room opens with
+the leftover count.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art treasure room with glowing gems being sorted into wooden chests of five, a small
+pile of leftover gems glowing brighter, a robot hero counting, dark stone vault, neon green
+and gold light, 16-bit RPG art.
+CodeQuest Academy · Page 14 of 66
+
+--- PAGE 15 ---
+DAY 10
+Mini Project — The Greeting Robot
+■ W H AT  Y O U  W I L L L E A R N
+Time to combine everything from Weeks 1 and 2 into one real program. The Greeting Robot will ask the
+user a few questions and print a friendly, personalised card.
+Plan first: ask for a name, ask for an age, convert the age to a number, calculate the birth year-ish value,
+then print a multi-line card using f-strings.
+This is how every project is born: small known pieces, snapped together with a plan.
+■ C O D E  E X A M P L E
+name = input("Name? ").strip().title()
+age = int(input("Age? "))
+print("=" * 20)
+print(f"  Hello, {name}!")
+print(f"  In 10 years: {age + 10}")
+print("=" * 20)
+A complete program: input, convert, calculate, present.
+■ TO D AY ' S  G A M E  L E V E L
+★ BOSS: The Welcome Hall
+Goal: Build a working greeting machine to pass the first month's gate.
+Setup: A grand hall with a deactivated greeting machine. Visitors are waiting.
+Win Condition: Write a program that collects name and age, then prints a framed greeting card. The machine
+lights up and the hall doors open.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art grand hall with a large friendly greeting robot machine lit up with neon panels,
+a decorative framed welcome card glowing in front of it, a hero robot pressing a button,
+golden hall, teal and purple light, 16-bit RPG style.
+CodeQuest Academy · Page 15 of 66
+
+--- PAGE 16 ---
+M O N T H  1  ·  W E E K  3
+Making Decisions
+Programs become smart when they can choose. This week you teach Python to compare things and pick
+different paths — the foundation of every game rule, login screen, and app feature.
+DAY 11
+True and False (Booleans)
+■ W H AT  Y O U  W I L L L E A R N
+A boolean is the simplest possible value: it is either True  or False . Think of it as a light switch — on or
+off, yes or no.
+Booleans are how the computer answers questions. "Is the player alive?" → True or False. "Is the door
+locked?" → True or False.
+Note the capital letters: Python wants True  and False , not "true" or "false". Those special words are
+the on/off switches of all decision-making.
+■ C O D E  E X A M P L E
+is_raining = True
+has_umbrella = False
+print("Raining?", is_raining)
+print("Umbrella?", has_umbrella)
+Booleans store yes/no facts about your program.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Switch Room
+Goal: Set the correct True/False switches to power the exit.
+Setup: Three lever-switches on a wall, each controlling a light. The exit needs a specific pattern.
+Win Condition: Create boolean variables matching the required pattern and print them. The lights match and
+the exit unlocks.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art control room wall with three large lever switches, two glowing ON and one OFF,
+status panels showing True/False, a robot hero reaching for a lever, dark metal walls, neon
+green and red indicator lights, 16-bit RPG art.
+CodeQuest Academy · Page 16 of 66
+
+--- PAGE 17 ---
+DAY 12
+Comparing Things
+■ W H AT  Y O U  W I L L L E A R N
+Booleans usually come from comparisons. Python can compare values and hand back True or False.
+The comparison operators are: ==  equal to, !=  not equal, >  greater than, <  less than, >=  greater-
+or-equal, <=  less-or-equal.
+Watch out: one =  stores a value; two ==  asks a question. Mixing them up is the most common
+beginner mistake.
+■ C O D E  E X A M P L E
+score = 75
+print(score > 50)      # True
+print(score == 100)    # False
+print(score != 75)     # False
+Each comparison produces a single boolean answer.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Weighing Scales
+Goal: Compare two treasure weights to find the heavier chest.
+Setup: Two chests on a giant scale. The heavier one holds the key.
+Win Condition: Use > to compare the two weights and print the result. The scale tips toward the winning
+chest.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art giant golden balance scale with two treasure chests, one side dipping lower,
+comparison symbols '>' glowing between them, a robot hero observing, dark vault, neon gold
+and teal light, 16-bit RPG educational diagram.
+CodeQuest Academy · Page 17 of 66
+
+--- PAGE 18 ---
+DAY 13
+The if Statement
+■ W H AT  Y O U  W I L L L E A R N
+The if  statement runs a block of code only when a condition is True. It is the program saying "if this is
+the case, then do this."
+Structure: write if , then a condition, then a colon : . The lines you want to run go indented underneath
+(usually 4 spaces). Indentation is how Python knows what belongs inside the if .
+■ C O D E  E X A M P L E
+temperature = 35
+if temperature > 30:
+print("It is hot!")
+print("Drink water.")
+The two indented lines only run if the condition is True.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Pressure Plate
+Goal: Step on the plate only if the path is safe.
+Setup: A pressure plate triggers a bridge — but only if a safety value is high enough.
+Win Condition: Write an if statement that checks the safety value and prints 'Cross now' when safe. The
+bridge extends.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art stone pressure plate glowing on a dungeon floor, a bridge extending across a gap,
+a robot hero stepping carefully, a floating condition check 'if safe', dark cavern, neon
+teal glow lines, 16-bit RPG style.
+CodeQuest Academy · Page 18 of 66
+
+--- PAGE 19 ---
+DAY 14
+if / elif / else
+■ W H AT  Y O U  W I L L L E A R N
+One condition is rarely enough. elif  (short for "else if") lets you check more conditions in order. else
+is the catch-all — it runs when nothing above matched.
+Python checks each branch from top to bottom and runs the first one that is True, then skips the rest. So
+put your most specific checks first.
+■ C O D E  E X A M P L E
+score = 82
+if score >= 90:
+print("Grade A")
+elif score >= 75:
+print("Grade B")
+else:
+print("Keep practising")
+Only one branch ever runs — the first match wins.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Three Doors
+Goal: Choose the correct door based on the key's power level.
+Setup: Three magic doors: Gold, Silver, Bronze. The key's power decides which opens.
+Win Condition: Use if / elif / else on the power value to print which door opens. The matching door swings
+wide.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art chamber with three glowing doors labelled Gold, Silver, Bronze, a branching path
+of light choosing one, a robot hero holding a glowing key, dark hall, neon gold/silver/
+bronze glow, 16-bit RPG aesthetic.
+CodeQuest Academy · Page 19 of 66
+
+--- PAGE 20 ---
+DAY 15
+Combining Conditions (and, or, not)
+■ W H AT  Y O U  W I L L L E A R N
+Sometimes a decision depends on several things at once. The logical operators join conditions together.
+and  is True only when both sides are True. or  is True when at least one side is True. not  flips a
+boolean to its opposite.
+Example: a player can enter a vault if has_key and knows_password  — both are required.
+■ C O D E  E X A M P L E
+has_key = True
+has_torch = False
+if has_key and has_torch:
+print("Enter the cave")
+else:
+print("You are missing something")
+'and' demands both; change one to False and the result flips.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Twin Locks
+Goal: Open a vault that needs two conditions met at once.
+Setup: A vault with two locks: it opens only if the hero has BOTH a key AND a torch.
+Win Condition: Write an if using 'and' to check both items and print the result. With both True, the vault
+opens.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art heavy vault door with two distinct keyholes glowing, a robot hero holding a key
+and a torch, an 'AND' gate symbol between the locks, dark treasure vault, neon teal and
+orange glow, 16-bit RPG style.
+CodeQuest Academy · Page 20 of 66
+
+--- PAGE 21 ---
+M O N T H  1  ·  W E E K  4
+Loops — Doing Things Again and Again
+Computers shine at repetition. This week you learn loops, so 1,000 steps cost you the same effort as one. You
+finish Month 1 by building a real Number Guessing Game.
+DAY 16
+The while Loop
+■ W H AT  Y O U  W I L L L E A R N
+A while loop repeats a block of code as long as a condition stays True. It is like saying "keep doing this
+while there is still work to do."
+The danger: if the condition never becomes False, the loop runs forever (an infinite loop). So inside the
+loop you must change something that moves you toward stopping.
+■ C O D E  E X A M P L E
+count = 1
+while count <= 5:
+print("Step", count)
+    count = count + 1
+print("Done!")
+count grows each pass; when it passes 5 the loop stops.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Climbing Tower
+Goal: Climb a 5-floor tower one floor at a time using a loop.
+Setup: A tall tower with 5 floors. The hero starts at floor 1; the treasure is at the top.
+Win Condition: Use a while loop that climbs while the floor number is 5 or less. The hero reaches the top and
+grabs the treasure.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art tall stone tower with five glowing floor markers, a robot hero climbing a ladder
+upward, repeating motion arrows, treasure chest at the top, dark night sky, neon teal step
+markers, 16-bit RPG aesthetic.
+CodeQuest Academy · Page 21 of 66
+
+--- PAGE 22 ---
+DAY 17
+The for Loop and range()
+■ W H AT  Y O U  W I L L L E A R N
+A for loop repeats a known number of times or steps through a collection. It is cleaner than a while loop
+when you know how many rounds you need.
+range(5)  produces the numbers 0,1,2,3,4. range(1, 6)  gives 1,2,3,4,5. range(0, 10, 2)  counts in
+steps of 2.
+The loop variable (often i ) holds the current number on each pass.
+■ C O D E  E X A M P L E
+for i in range(1, 6):
+print(f"Counting: {i}")
+for x in range(0, 10, 2):
+print(x)
+range() is the engine that feeds a for loop its numbers.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Stepping Stones
+Goal: Cross a river by stepping on exactly the right stones.
+Setup: A river with stones at positions 1 through 5. The hero must hop each one in order.
+Win Condition: Use a for loop with range to step on stones 1..5 in order. The hero crosses to the far bank.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art river crossing with five glowing stepping stones in a row, a robot hero mid-hop,
+numbered positions, repeating arc motion lines, dark blue water, neon teal stone glow, 16-
+bit RPG art.
+CodeQuest Academy · Page 22 of 66
+
+--- PAGE 23 ---
+DAY 18
+break and continue
+■ W H AT  Y O U  W I L L L E A R N
+Inside a loop you have two emergency controls. break  instantly stops the whole loop and jumps out. 
+continue skips the rest of the current round and jumps straight to the next one.
+Use break  when you have found what you were looking for. Use continue  when you want to ignore
+certain cases but keep looping.
+■ C O D E  E X A M P L E
+for n in range(1, 10):
+if n == 6:
+break
+# stop completely
+if n % 2 == 0:
+continue
+# skip even numbers
+print(n)
+Prints 1, 3, 5 — evens skipped, loop ends at 6.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Trap Corridor
+Goal: Run down a corridor, skip trap tiles, and stop at the exit.
+Setup: A 9-tile corridor. Some tiles are traps; tile 6 is the exit door.
+Win Condition: Loop the tiles: use continue to skip traps and break when reaching the exit. The hero escapes
+safely.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art dungeon corridor of nine floor tiles, some glowing red as traps, an exit door
+glowing teal at tile six, a robot hero leaping over a trap, dark stone walls, neon hazard
+lights, 16-bit RPG style.
+CodeQuest Academy · Page 23 of 66
+
+--- PAGE 24 ---
+DAY 19
+Loop Patterns (Counters & Totals)
+■ W H AT  Y O U  W I L L L E A R N
+Two patterns appear in almost every program. A counter counts how many times something happens:
+start at 0, add 1 each time. A total (accumulator) adds up values: start at 0, add the value each round.
+The key idea: create the variable before the loop, update it inside the loop, and use it after the loop.
+■ C O D E  E X A M P L E
+total = 0
+for price in [5, 8, 3, 10]:
+    total = total + price
+print(f"You spent {total} coins")
+total starts at 0 and grows with each price.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Coin Collector
+Goal: Walk a path of coin piles and add up the total gold.
+Setup: A path with several coin piles of different sizes leading to a vault scale.
+Win Condition: Use a loop with a running total to sum all coin piles, then print the total. The vault opens at the
+right sum.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art winding path with several glowing coin piles of different sizes, a robot hero
+collecting them, a running total counter floating above, dark green field at dusk, neon
+gold sparkle, 16-bit RPG aesthetic.
+CodeQuest Academy · Page 24 of 66
+
+--- PAGE 25 ---
+DAY 20
+Mini Project — Number Guessing Game
+■ W H AT  Y O U  W I L L L E A R N
+Month 1 finale! You will build a classic game: the computer thinks of a secret number, the player guesses,
+and the program says "too high" or "too low" until they win.
+Plan: pick a secret number, start a while loop, take a guess with input, convert it, compare it, give a hint,
+and break when correct. Count the guesses for a score.
+■ C O D E  E X A M P L E
+secret = 7
+guesses = 0
+while True:
+    g = int(input("Guess (1-10): "))
+    guesses += 1
+if g == secret:
+print(f"Won in {guesses} tries!")
+break
+elif g < secret:
+print("Too low")
+else:
+print("Too high")
+Loop + decisions + counter — Month 1 in one program.
+■ TO D AY ' S  G A M E  L E V E L
+★ BOSS: The Oracle's Riddle
+Goal: Defeat the Oracle by guessing its secret number.
+Setup: A glowing Oracle holds a secret number and gives high/low hints to challengers.
+Win Condition: Build the full guessing game with hints and a guess counter. Guess correctly and the Oracle
+yields the Month-1 trophy.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art mystical Oracle made of glowing crystals floating above an altar, a robot hero
+guessing numbers with arrows showing higher/lower hints, dark temple, neon purple and cyan
+energy, 16-bit RPG boss-fight scene.
+CodeQuest Academy · Page 25 of 66
+
+--- PAGE 26 ---
+M O N T H  2  ·  W E E K  5
+Lists — Your First Collection
+Single variables hold one thing. This week you learn lists, which hold many things in order — the backbone of
+inventories, scoreboards, playlists, and almost every real app.
+DAY 21
+What is a List?
+■ W H AT  Y O U  W I L L L E A R N
+A list is one variable that holds many values in a row. You write it with square brackets [ ]  and commas
+between items.
+A list keeps its items in order, and it can hold any types — numbers, strings, even other lists. 
+len(my_list)  tells you how many items are inside.
+Think of a list as a backpack: one object, many slots.
+■ C O D E  E X A M P L E
+inventory = ["sword", "shield", "potion"]
+print(inventory)
+print("Items:", len(inventory))
+One variable, three items, kept in order.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Backpack
+Goal: Pack three required items into the hero's backpack list.
+Setup: An empty backpack and a table with many items. The quest needs exactly three.
+Win Condition: Create a list with the three needed items and print its length. The backpack seals when len is
+3.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art adventurer's backpack open with three glowing item slots showing a sword, shield,
+and potion, a robot hero packing, dark wooden table, neon teal slot outlines, 16-bit RPG
+inventory screen aesthetic.
+CodeQuest Academy · Page 26 of 66
+
+--- PAGE 27 ---
+DAY 22
+Reaching Into Lists (Indexing)
+■ W H AT  Y O U  W I L L L E A R N
+Each item in a list has a position number called an index. Counting starts at 0, not 1. So the first item is
+index 0, the second is index 1, and so on.
+Grab an item with square brackets: inventory[0] . Negative indexes count from the end: 
+inventory[-1]  is the last item.
+■ C O D E  E X A M P L E
+team = ["Ana", "Ben", "Cara", "Dia"]
+print(team[0])    # Ana (first)
+print(team[2])    # Cara
+print(team[-1])   # Dia (last)
+Index 0 = first. -1 = last. A common stumble — practise it!
+■ TO D AY ' S  G A M E  L E V E L
+★ The Numbered Vaults
+Goal: Open the vault at a specific index to retrieve the artifact.
+Setup: A row of vaults numbered from 0. The quest says 'open vault index 2'.
+Win Condition: Print the list item at the requested index. The correct vault glows and opens.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art row of metal vault doors each labelled with an index number 0,1,2,3, vault number
+2 glowing open, a robot hero reaching inside, dark bank vault, neon teal numbers, 16-bit
+RPG style.
+CodeQuest Academy · Page 27 of 66
+
+--- PAGE 28 ---
+DAY 23
+Changing Lists (Add & Remove)
+■ W H AT  Y O U  W I L L L E A R N
+Lists can change — they are flexible. .append(x)  adds an item to the end. .insert(i, x)  slots an
+item at position i. .remove(x)  deletes the first matching item, and .pop()  removes the last item and
+hands it back.
+You can also overwrite an item directly: list[0] = "new" .
+■ C O D E  E X A M P L E
+bag = ["apple", "bread"]
+bag.append("cheese")
+bag.remove("apple")
+bag[0] = "toast"
+print(bag)   # ['toast', 'cheese']
+Lists grow, shrink, and change on the fly.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Shifting Shelf
+Goal: Fix a magic shelf by adding and removing the right items.
+Setup: A shelf has a wrong item and is missing one. The recipe demands an exact list.
+Win Condition: Use append and remove to make the list match the target, then print it. The shelf glows
+correct.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art magic shelf with glowing item jars, one jar fading away and a new jar appearing
+with sparkles, a robot hero adjusting them, dark apothecary, neon green and teal glow, 16-
+bit RPG aesthetic.
+CodeQuest Academy · Page 28 of 66
+
+--- PAGE 29 ---
+DAY 24
+Slicing Lists
+■ W H AT  Y O U  W I L L L E A R N
+Slicing grabs a section of a list at once. The pattern is list[start:stop] . It includes start  but stops 
+before stop .
+nums[1:4]  takes items 1,2,3. Leaving a side blank means "to the end" or "from the start": nums[:3]  or 
+nums[2:] .
+■ C O D E  E X A M P L E
+nums = [10, 20, 30, 40, 50]
+print(nums[1:4])   # [20, 30, 40]
+print(nums[:2])    # [10, 20]
+print(nums[3:])    # [40, 50]
+Slicing copies a chunk without touching the original.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Map Fragment
+Goal: Cut the exact section of a treasure map you need.
+Setup: A long scroll-map of tiles; the quest needs only tiles 2 through 4.
+Win Condition: Slice the map list to the required range and print it. The cropped map reveals the treasure
+spot.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art old treasure map scroll with a glowing rectangular section being cut out, a robot
+hero holding scissors of light, dark parchment, neon teal cut lines, marked X treasure, 16-
+bit RPG style.
+CodeQuest Academy · Page 29 of 66
+
+--- PAGE 30 ---
+DAY 25
+Looping Through Lists
+■ W H AT  Y O U  W I L L L E A R N
+The real power of lists appears when you combine them with loops. A for  loop can walk through every
+item automatically.
+for item in my_list:  hands you one item at a time. If you also need the index, use enumerate() ,
+which gives both position and value.
+■ C O D E  E X A M P L E
+scores = [90, 75, 88]
+for i, s in enumerate(scores):
+print(f"Player {i+1} scored {s}")
+enumerate() gives index and value together.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Roll Call
+Goal: Greet every guard on patrol by walking the whole list.
+Setup: A line of guards, each needing to be addressed by number and name.
+Win Condition: Loop the guard list with enumerate and print a greeting for each. All guards salute and step
+aside.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art line of robot guards standing at attention, a hero robot walking past greeting
+each, glowing numbers above their heads, dark fortress courtyard, neon teal markers, 16-bit
+RPG aesthetic.
+CodeQuest Academy · Page 30 of 66
+
+--- PAGE 31 ---
+M O N T H  2  ·  W E E K  6
+More Ways to Store Data
+Lists are not the only container. This week you meet tuples, dictionaries, and sets — each perfect for a different
+job. You finish with an Inventory Tracker that uses them together.
+DAY 26
+Tuples — Lists That Cannot Change
+■ W H AT  Y O U  W I L L L E A R N
+A tuple is like a list, but locked — once created, its items cannot change. You write it with round brackets 
+( ) .
+Use a tuple for data that should stay fixed: a coordinate (x, y) , a date, or a colour. The lock protects
+you from accidental edits, and it makes the program a little faster.
+■ C O D E  E X A M P L E
+point = (3, 7)
+print("X is", point[0])
+print("Y is", point[1])
+# point[0] = 9  -> this would cause an error
+Indexing works like a list; changing does not.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Fixed Coordinates
+Goal: Read a sealed coordinate tuple to find the buried chest.
+Setup: An ancient stone tablet stores an unchangeable (X, Y) location.
+Win Condition: Read both values from the tuple and print the location. The chest appears at exactly those
+coordinates.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art ancient stone tablet engraved with locked coordinates (3, 7), a glowing grid map
+below with a marked spot, a robot archaeologist hero, dark ruins, neon teal engravings, 16-
+bit RPG style.
+CodeQuest Academy · Page 31 of 66
+
+--- PAGE 32 ---
+DAY 27
+Dictionaries — Labels and Values
+■ W H AT  Y O U  W I L L L E A R N
+A dictionary stores data as key → value pairs. Instead of remembering position numbers, you look
+things up by a meaningful label (the key).
+Write it with curly braces: {"name": "Sara", "hp": 100} . Get a value with player["hp"] . It is like a
+real dictionary: look up a word (key), get its meaning (value).
+■ C O D E  E X A M P L E
+player = {"name": "Sara", "hp": 100, "level": 3}
+print(player["name"])
+print("HP:", player["hp"])
+Keys are labels; values are the data behind them.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Character Sheet
+Goal: Read a hero's stats from a labelled dictionary.
+Setup: A glowing character sheet stores name, hp, and level by label.
+Win Condition: Look up each stat by its key and print it. The character sheet validates and the gate opens.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art RPG character sheet panel showing labelled stats Name, HP, Level with glowing
+values, a robot hero reading it, dark UI background, neon teal and purple labels, 16-bit
+game menu aesthetic.
+CodeQuest Academy · Page 32 of 66
+
+--- PAGE 33 ---
+DAY 28
+Working With Dictionaries
+■ W H AT  Y O U  W I L L L E A R N
+Dictionaries are easy to update. Add or change a value by assigning to a key: player["hp"] = 80 . If the
+key is new, it is created; if it exists, it is updated.
+Loop through one with for key in player:  or get pairs with .items() . Check membership with "hp"
+in player .
+■ C O D E  E X A M P L E
+player = {"hp": 100, "gold": 5}
+player["gold"] += 10
+player["armor"] = "iron"
+for key, value in player.items():
+print(f"{key}: {value}")
+Add, update, and loop — dictionaries are flexible records.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Stat Upgrade
+Goal: Upgrade a hero by editing dictionary values.
+Setup: A hero at a forge needs HP increased and a new armor entry added.
+Win Condition: Update the hp value and add an armor key, then loop and print all stats. The hero is
+upgraded.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art forge with a robot hero glowing brighter as stat numbers tick upward, a floating
+stat panel updating values, dark workshop, neon orange forge light and teal stat glow, 16-
+bit RPG aesthetic.
+CodeQuest Academy · Page 33 of 66
+
+--- PAGE 34 ---
+DAY 29
+Sets — Collections With No Duplicates
+■ W H AT  Y O U  W I L L L E A R N
+A set is a collection that automatically removes duplicates and does not keep order. Write it with curly
+braces: {1, 2, 3} .
+Sets are great for "unique things" — which levels a player has visited, which tags an article has. They
+also do math: |  union (combine), &  intersection (in both).
+■ C O D E  E X A M P L E
+visited = {"forest", "cave", "forest"}
+print(visited)            # duplicate gone
+visited.add("castle")
+print(len(visited))       # 3
+A set quietly throws away repeats for you.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Unique Stamps
+Goal: Collect one of each region stamp — no repeats allowed.
+Setup: A passport that only accepts unique region stamps; duplicates are rejected.
+Win Condition: Add region names to a set; duplicates vanish automatically. Print the count to unlock the
+border.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art travel passport book with glowing region stamps, duplicate stamps fading away, a
+robot traveler hero stamping a page, dark desk, neon teal stamp glow, 16-bit RPG aesthetic.
+CodeQuest Academy · Page 34 of 66
+
+--- PAGE 35 ---
+DAY 30
+Mini Project — The Inventory Tracker
+■ W H AT  Y O U  W I L L L E A R N
+Combine all of Week 6 into a small inventory program. You will store items as a dictionary of name →
+quantity , let the user add items, and print a tidy report.
+Plan: start with a dictionary, loop to ask the user for items and amounts, update the dictionary, then loop
+again to print every item with its count and a grand total.
+■ C O D E  E X A M P L E
+shop = {"potion": 3, "key": 1}
+shop["potion"] += 2
+shop["map"] = 1
+total = 0
+for name, qty in shop.items():
+print(f"{name}: {qty}")
+    total += qty
+print(f"Total items: {total}")
+A dictionary as a real, updatable inventory record.
+■ TO D AY ' S  G A M E  L E V E L
+★ BOSS: The Merchant's Ledger
+Goal: Run the shop by tracking every item and quantity correctly.
+Setup: A merchant's shop with a broken ledger. Customers are waiting to trade.
+Win Condition: Build a dictionary-based inventory that adds items, updates counts, and prints a totalled
+report. The ledger glows and the shop opens.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art fantasy merchant shop with shelves of glowing goods and a large open ledger book
+showing item names and counts, a robot shopkeeper hero, dark cozy interior, neon teal and
+gold light, 16-bit RPG aesthetic.
+CodeQuest Academy · Page 35 of 66
+
+--- PAGE 36 ---
+M O N T H  2  ·  W E E K  7
+Functions — Reusable Blocks of Code
+So far your code runs once, top to bottom. Functions let you name a block of code and reuse it whenever you
+like. They are how big programs stay organised and tidy.
+DAY 31
+What is a Function?
+■ W H AT  Y O U  W I L L L E A R N
+A function is a named recipe — a block of code you write once and run many times. You define it with 
+def , give it a name, add brackets and a colon, then indent the steps.
+Defining a function does not run it. To run it you call it by writing its name with brackets: greet() .
+Functions stop you repeating yourself and let you read code like a list of clear actions.
+■ C O D E  E X A M P L E
+def greet():
+print("Welcome, hero!")
+print("Your quest begins.")
+greet()
+greet()
+Defined once, called twice — no copy-paste needed.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Spell Book
+Goal: Define a 'cast_light' spell and use it twice to light two rooms.
+Setup: Two dark rooms. The hero has a spell book but no spells defined yet.
+Win Condition: Define a function that lights a room, then call it twice. Both rooms glow and the path
+continues.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art glowing spell book open on a pedestal with a 'cast light' spell page, two dark
+rooms lighting up with teal orbs, a robot wizard hero, dark dungeon, neon teal magic, 16-
+bit RPG aesthetic.
+CodeQuest Academy · Page 36 of 66
+
+--- PAGE 37 ---
+DAY 32
+Giving Functions Inputs (Parameters)
+■ W H AT  Y O U  W I L L L E A R N
+A function becomes powerful when you can hand it information. Parameters are the named slots in the
+brackets that receive that information.
+def greet(name):  creates a slot called name . When you call greet("Ali") , the value "Ali" fills the
+slot. The value you pass in is called an argument.
+■ C O D E  E X A M P L E
+def greet(name, times):
+for i in range(times):
+print(f"Hello, {name}!")
+greet("Ali", 3)
+Same function, different inputs, different results.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Custom Door
+Goal: Build one 'open_door' function that works for any door colour.
+Setup: Three doors of different colours, each needing the same opening ritual.
+Win Condition: Define open_door(colour) and call it for each colour. Every matching door opens.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art row of three coloured magic doors, a single glowing function gear feeding a
+colour parameter into each, a robot hero operating it, dark hall, neon multicolour glow,
+16-bit RPG educational diagram.
+CodeQuest Academy · Page 37 of 66
+
+--- PAGE 38 ---
+DAY 33
+Getting Answers Back (return)
+■ W H AT  Y O U  W I L L L E A R N
+Functions can send a value back to whoever called them, using return . The returned value can be
+stored in a variable or used directly.
+Difference to remember: print()  just shows something on screen; return  actually hands the value
+back so the rest of the program can use it.
+■ C O D E  E X A M P L E
+def add(a, b):
+return a + b
+result = add(4, 9)
+print(f"The total is {result}")
+return gives a value the program can keep working with.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Calculation Altar
+Goal: Build a function that returns the damage value to defeat a foe.
+Setup: An altar needs a calculated damage number to fire its beam.
+Win Condition: Write a function that returns a computed value, store it, and feed it to the altar. The beam fires
+correctly.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art glowing altar with a function machine returning a bright number orb into a slot,
+a robot hero watching an energy beam charge, dark temple, neon purple and teal glow, 16-bit
+RPG aesthetic.
+CodeQuest Academy · Page 38 of 66
+
+--- PAGE 39 ---
+DAY 34
+Default Values & Keyword Arguments
+■ W H AT  Y O U  W I L L L E A R N
+You can give a parameter a default value so it is optional. def greet(name="friend")  means: if no
+name is passed, use "friend".
+You can also pass arguments by name — keyword arguments — like greet(name="Sam") . This makes
+calls clear and lets you skip optional ones.
+■ C O D E  E X A M P L E
+def power(base, exp=2):
+return base ** exp
+print(power(5))        # 25 (exp defaults to 2)
+print(power(2, exp=3)) # 8
+Defaults make some inputs optional and code friendlier.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Adjustable Trap
+Goal: Configure a trap function that has sensible defaults.
+Setup: A trap mechanism works with default settings but can be tuned for a tough room.
+Win Condition: Call a function using defaults for one room and keyword arguments for another. Both rooms
+are cleared.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art mechanical trap device with adjustable dials, some set to default and some
+custom-tuned, a robot engineer hero, dark dungeon workshop, neon orange dials and teal
+glow, 16-bit RPG style.
+CodeQuest Academy · Page 39 of 66
+
+--- PAGE 40 ---
+DAY 35
+Scope — Where Variables Live
+■ W H AT  Y O U  W I L L L E A R N
+Scope is the area where a variable exists. A variable created inside a function is local — it only lives
+during that function call and vanishes afterwards.
+A variable created outside all functions is global — visible everywhere. Best practice: keep most
+variables local and pass data in through parameters and out through return .
+■ C O D E  E X A M P L E
+score = 0
+# global
+def earn():
+    bonus = 10
+# local, dies after the call
+return score + bonus
+print(earn())
+'bonus' cannot be seen outside the function.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Sealed Chambers
+Goal: Understand which keys work inside vs outside a room.
+Setup: A room where a 'local key' works only inside, and a 'global key' works everywhere.
+Win Condition: Use a local variable inside a function and a global one outside; print both correctly. The
+chamber logic resolves.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art cutaway of two rooms, one small room with a glowing 'local' key trapped inside,
+one global key floating in a hallway reaching all rooms, a robot hero, dark dungeon, neon
+teal and purple, 16-bit RPG diagram.
+CodeQuest Academy · Page 40 of 66
+
+--- PAGE 41 ---
+M O N T H  2  ·  W E E K  8
+Functions Deep + Handling Errors
+This week you master advanced function tricks and learn to handle errors gracefully, so your programs never
+crash unexpectedly. You finish Month 2 with a Calculator Toolkit.
+DAY 36
+*args and **kwargs
+■ W H AT  Y O U  W I L L L E A R N
+Sometimes you do not know how many arguments will be passed. *args  collects any number of extra
+positional values into a tuple. **kwargs  collects any number of named values into a dictionary.
+The single *  and double **  are the magic. Inside the function you simply loop over them.
+■ C O D E  E X A M P L E
+def total(*numbers):
+    s = 0
+for n in numbers:
+        s += n
+return s
+print(total(3, 7, 1, 9))   # 20
+*numbers accepts as many values as you give it.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Endless Satchel
+Goal: Build a function that sums any number of treasure piles.
+Setup: Different rooms drop different counts of treasure piles into one satchel.
+Win Condition: Write a function with *args that totals however many values it receives. The satchel weighs in
+correctly.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art magic satchel with a stream of glowing coins of varying counts flowing in, a
+robot hero holding it, a total counter above, dark cave, neon gold and teal glow, 16-bit
+RPG aesthetic.
+CodeQuest Academy · Page 41 of 66
+
+--- PAGE 42 ---
+DAY 37
+Lambda — Tiny Functions
+■ W H AT  Y O U  W I L L L E A R N
+A lambda is a tiny, one-line, nameless function. square = lambda x: x * x  does the same as a small 
+def .
+Lambdas shine when a function needs another function for a quick job — like telling sorted()  how to
+sort: sorted(items, key=lambda i: i[1]) .
+■ C O D E  E X A M P L E
+double = lambda x: x * 2
+print(double(8))            # 16
+pairs = [(1,"b"), (3,"a")]
+print(sorted(pairs, key=lambda p: p[1]))
+A lambda is a function small enough to fit on one line.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Quick Rune
+Goal: Etch a one-line rune to transform incoming energy.
+Setup: A rune slot accepts only a compact one-line transformation.
+Win Condition: Define a lambda that transforms a value and apply it. The rune glows and the energy is
+converted.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art glowing single-line rune carved into a small floating tile transforming an energy
+orb, a robot hero etching it, dark arcane chamber, neon purple rune light, 16-bit RPG
+aesthetic.
+CodeQuest Academy · Page 42 of 66
+
+--- PAGE 43 ---
+DAY 38
+Recursion — Functions That Call Themselves
+■ W H AT  Y O U  W I L L L E A R N
+Recursion is when a function calls itself to solve a smaller version of the same problem. Every recursion
+needs a base case — a simple situation where it stops — or it loops forever.
+Classic example: factorial. 5! = 5 * 4! , and so on, until 1! = 1  (the base case).
+■ C O D E  E X A M P L E
+def factorial(n):
+if n <= 1:
+return 1
+# base case
+return n * factorial(n - 1)
+print(factorial(5))   # 120
+The function shrinks the problem until the base case stops it.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Mirror Hall
+Goal: Pass through nested mirror rooms that each call the next.
+Setup: A hall of mirrors where each room contains a smaller copy of itself.
+Win Condition: Write a recursive function with a base case that explores each nested room. The deepest
+mirror reveals the exit.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art hall of mirrors with infinitely nested smaller rooms receding into the distance,
+a robot hero stepping through, a glowing base-case door at the center, dark blue, neon teal
+reflections, 16-bit RPG style.
+CodeQuest Academy · Page 43 of 66
+
+--- PAGE 44 ---
+DAY 39
+Errors and Exceptions
+■ W H AT  Y O U  W I L L L E A R N
+When something goes wrong, Python raises an exception and the program crashes. You can catch it
+with try  / except .
+Put risky code in the try  block. If it fails, the matching except  block runs instead of crashing. This is
+how real apps stay alive when users do unexpected things.
+■ C O D E  E X A M P L E
+try:
+    n = int(input("A number: "))
+print(10 / n)
+except ValueError:
+print("That was not a number!")
+except ZeroDivisionError:
+print("Cannot divide by zero!")
+try/except catches problems and keeps the program running.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Safety Net
+Goal: Cross a glitchy bridge that sometimes throws errors.
+Setup: A bridge with unstable tiles that occasionally trigger faults.
+Win Condition: Wrap risky moves in try/except so faults are caught gracefully. The hero crosses without
+crashing.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art unstable glowing bridge with a translucent protective safety net of teal light
+beneath it, a robot hero crossing calmly, dark chasm, neon warning glints, 16-bit RPG
+aesthetic.
+CodeQuest Academy · Page 44 of 66
+
+--- PAGE 45 ---
+DAY 40
+Mini Project — The Calculator Toolkit
+■ W H AT  Y O U  W I L L L E A R N
+Month 2 finale! Build a calculator that offers several operations through functions and never crashes on
+bad input.
+Plan: write one function per operation (add, subtract, divide...), each with return . Ask the user what
+they want, read two numbers safely with try/except, call the right function, and show the result.
+■ C O D E  E X A M P L E
+def divide(a, b):
+return a / b
+try:
+    x = float(input("First: "))
+    y = float(input("Second: "))
+print("Result:", divide(x, y))
+except (ValueError, ZeroDivisionError):
+print("Invalid input — try again.")
+Functions + return + error handling, all in one tool.
+■ TO D AY ' S  G A M E  L E V E L
+★ BOSS: The Arithmetic Golem
+Goal: Power a calculation golem with a crash-proof toolkit.
+Setup: A stone golem demands correct math answers and punishes program crashes.
+Win Condition: Build a calculator with one function per operation and full try/except. Solve its challenges to
+win the Month-2 trophy.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art towering stone golem covered in glowing math symbols, a robot hero operating a
+calculator console, dark arena, neon green and purple energy, 16-bit RPG boss-fight scene.
+CodeQuest Academy · Page 45 of 66
+
+--- PAGE 46 ---
+M O N T H  3  ·  W E E K  9
+Object-Oriented Programming
+Month 3 begins! This week you learn to build your own data types using classes — the way professional
+programs model players, enemies, accounts, and everything else.
+DAY 41
+What is an Object?
+■ W H AT  Y O U  W I L L L E A R N
+An object bundles together data (what it knows) and actions (what it can do) into one unit. A game hero
+object might know its name and HP, and be able to attack and heal.
+A class is the blueprint; an object is a real thing built from that blueprint. One class, many objects — like
+one cookie cutter, many cookies.
+■ C O D E  E X A M P L E
+# A string is already an object
+word = "hero"
+print(word.upper())     # action
+print(len(word))        # data: length 4
+You have used objects all along — now you will build them.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Blueprint Vault
+Goal: Discover the blueprint that all heroes are built from.
+Setup: A vault holds the master blueprint scroll for hero objects.
+Win Condition: Inspect an existing object's data and actions, then print them. The blueprint scroll is revealed.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art vault containing a glowing blueprint scroll of a hero with labelled data and
+action icons, a robot hero examining it, dark archive room, neon teal blueprint lines, 16-
+bit RPG aesthetic.
+CodeQuest Academy · Page 46 of 66
+
+--- PAGE 47 ---
+DAY 42
+Building a Class
+■ W H AT  Y O U  W I L L L E A R N
+You define a class with the class  keyword and a capitalised name. Inside, you write functions that
+belong to the class — these are called methods.
+To make a real object from the class, you create an instance: h = Hero() . Now h  is one hero built
+from the Hero blueprint.
+■ C O D E  E X A M P L E
+class Hero:
+def shout(self):
+print("For the kingdom!")
+h = Hero()
+h.shout()
+A class is the recipe; h is one finished hero.
+■ TO D AY ' S  G A M E  L E V E L
+★ The First Creation
+Goal: Define a Hero class and bring one hero to life.
+Setup: An empty summoning circle waits for a hero blueprint.
+Win Condition: Write a Hero class with one method, create an instance, and call the method. A hero
+materialises in the circle.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art glowing summoning circle with a robot hero materialising from blueprint light,
+magical particles, dark stone chamber, neon teal and purple summoning glow, 16-bit RPG
+aesthetic.
+CodeQuest Academy · Page 47 of 66
+
+--- PAGE 48 ---
+DAY 43
+The __init__ Method
+■ W H AT  Y O U  W I L L L E A R N
+__init__  is a special method that runs automatically when a new object is created. It is where you set
+up the object's starting data.
+The first parameter is always self  — it means "this particular object." You store data on it like 
+self.name = name . These stored values are called attributes.
+■ C O D E  E X A M P L E
+class Hero:
+def __init__(self, name, hp):
+self.name = name
+self.hp = hp
+h = Hero("Ava", 100)
+print(h.name, h.hp)
+__init__ gives every new object its own starting stats.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Naming Forge
+Goal: Forge heroes that each start with their own name and HP.
+Setup: A forge can create heroes but they currently spawn blank.
+Win Condition: Add an __init__ that sets name and hp, then forge two different heroes. Both appear with
+correct stats.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art magic forge producing two distinct robot heroes with glowing name tags and HP
+bars, a smith hero operating it, dark workshop, neon orange and teal glow, 16-bit RPG
+aesthetic.
+CodeQuest Academy · Page 48 of 66
+
+--- PAGE 49 ---
+DAY 44
+Methods — Things Objects Can Do
+■ W H AT  Y O U  W I L L L E A R N
+Methods are functions that belong to a class and act on the object's own data. They always take self
+first, so they can read and change the object's attributes.
+A heal  method might do self.hp += 10 . Each object keeps its own data, so healing one hero does not
+affect another.
+■ C O D E  E X A M P L E
+class Hero:
+def __init__(self, hp):
+self.hp = hp
+def heal(self, amount):
+self.hp += amount
+h = Hero(50)
+h.heal(25)
+print(h.hp)   # 75
+Methods let objects change their own state.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Action Trials
+Goal: Give your hero attack and heal methods to survive the trials.
+Setup: A trial arena tests whether your hero can act, not just exist.
+Win Condition: Add heal and attack methods that change hp, then use them in the trial. The hero survives
+and advances.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art arena where a robot hero performs an attack and a heal, glowing action gears
+attached to the hero, HP bar changing, dark battle ground, neon teal and red effects, 16-
+bit RPG style.
+CodeQuest Academy · Page 49 of 66
+
+--- PAGE 50 ---
+DAY 45
+Making Many Objects
+■ W H AT  Y O U  W I L L L E A R N
+The real strength of classes: one blueprint, unlimited objects, each with independent data. You can even
+keep many objects in a list and loop over them.
+This is exactly how a game manages a whole party of heroes or a swarm of enemies — write the class
+once, then spawn as many as you need.
+■ C O D E  E X A M P L E
+class Hero:
+def __init__(self, name):
+self.name = name
+party = [Hero("Ava"), Hero("Ben"), Hero("Cy")]
+for h in party:
+print(h.name)
+A list of objects — a whole party from one class.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Army Muster
+Goal: Summon a full party of heroes from a single class.
+Setup: A battlefield needs an army, but you have only one blueprint.
+Win Condition: Create several Hero objects, store them in a list, and loop to display each. The full party
+assembles.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art battlefield muster with a row of unique robot heroes spawning from one glowing
+blueprint, a commander hero reviewing them, dark fortress field, neon teal spawn light, 16-
+bit RPG aesthetic.
+CodeQuest Academy · Page 50 of 66
+
+--- PAGE 51 ---
+M O N T H  3  ·  W E E K  1 0
+OOP Power-Ups
+This week you unlock the advanced object features: inheritance, overriding, polymorphism, encapsulation, and
+magic methods — the tools that make object-oriented code elegant and powerful.
+DAY 46
+Inheritance — Passing Down Traits
+■ W H AT  Y O U  W I L L L E A R N
+Inheritance lets a new class reuse everything from an existing class. The original is the parent (base)
+class; the new one is the child (sub) class.
+Write class Wizard(Hero):  and Wizard instantly gets all of Hero's attributes and methods, plus
+anything extra you add. No copy-paste.
+■ C O D E  E X A M P L E
+class Hero:
+def __init__(self, hp):
+self.hp = hp
+class Wizard(Hero):
+def cast(self):
+print("Fireball!")
+w = Wizard(80)
+print(w.hp)
+w.cast()
+Wizard inherits hp from Hero and adds cast().
+■ TO D AY ' S  G A M E  L E V E L
+★ The Family Tree
+Goal: Create specialised hero types that inherit a shared base.
+Setup: A guild needs Wizards and Knights, all sharing core hero abilities.
+Win Condition: Make a Hero base class and child classes that inherit from it. Each specialised hero passes
+the guild test.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art glowing family-tree diagram with a parent Hero node branching into Wizard and
+Knight nodes, robot heroes beside each, dark hall, neon teal connecting lines, 16-bit RPG
+educational diagram.
+CodeQuest Academy · Page 51 of 66
+
+--- PAGE 52 ---
+DAY 47
+Overriding and super()
+■ W H AT  Y O U  W I L L L E A R N
+A child class can override a parent method — write a method with the same name and the child's version
+wins.
+If you still want the parent's version plus extra, call super() . super().__init__(...)  runs the parent's
+setup, then you add the child-specific parts.
+■ C O D E  E X A M P L E
+class Hero:
+def __init__(self, hp):
+self.hp = hp
+class Wizard(Hero):
+def __init__(self, hp, mana):
+        super().__init__(hp)
+self.mana = mana
+super() reuses the parent setup, then the child extends it.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Inherited Crown
+Goal: Extend a parent ritual without rewriting it.
+Setup: A coronation ritual must keep the old steps but add new ones.
+Win Condition: Override __init__ in a child class and call super() to keep parent setup. The extended ritual
+completes.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art coronation chamber with a glowing crown, a parent ritual circle linked by light
+to a larger child ritual circle, a robot hero, dark royal hall, neon purple and gold, 16-
+bit RPG aesthetic.
+CodeQuest Academy · Page 52 of 66
+
+--- PAGE 53 ---
+DAY 48
+Polymorphism
+■ W H AT  Y O U  W I L L L E A R N
+Polymorphism means "many shapes." Different classes can share a method name but each does it their
+own way. Your code can call attack()  on any creature without caring which type it is.
+This lets you write flexible code: loop over a mixed list of enemies and call the same method on each —
+every object responds correctly.
+■ C O D E  E X A M P L E
+class Cat:
+def speak(self): print("Meow")
+class Dog:
+def speak(self): print("Woof")
+for pet in [Cat(), Dog(), Cat()]:
+    pet.speak()
+Same call, different behaviour per class.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Mixed Menagerie
+Goal: Command a zoo of different creatures with one shared order.
+Setup: A menagerie of different animal classes must all respond to one command.
+Win Condition: Give each class a speak method and loop a mixed list calling it. Every creature responds in its
+own way.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art fantasy menagerie with several different creature pens, each creature reacting
+differently to one glowing command signal, a robot keeper hero, dark zoo, neon teal command
+waves, 16-bit RPG aesthetic.
+CodeQuest Academy · Page 53 of 66
+
+--- PAGE 54 ---
+DAY 49
+Encapsulation (Protecting Data)
+■ W H AT  Y O U  W I L L L E A R N
+Encapsulation means hiding an object's inner data and only allowing changes through safe methods. In
+Python, an underscore prefix like self._hp  signals "please do not touch this directly."
+You then provide controlled methods — for example a take_damage()  that never lets HP drop below 0.
+The object protects its own rules.
+■ C O D E  E X A M P L E
+class Hero:
+def __init__(self):
+self._hp = 100
+def take_damage(self, d):
+self._hp = max(0, self._hp - d)
+def status(self):
+return self._hp
+Damage goes through a method that enforces the rules.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Guarded Core
+Goal: Protect a hero's HP core so it can never be corrupted.
+Setup: A hero's HP core is exposed and enemies can set it to invalid values.
+Win Condition: Hide the hp attribute and only change it through safe methods. The core becomes tamper-
+proof.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art glowing energy core sealed inside a transparent protective shell with a single
+safe access valve, a robot guardian hero, dark reactor room, neon teal shielding, 16-bit
+RPG aesthetic.
+CodeQuest Academy · Page 54 of 66
+
+--- PAGE 55 ---
+DAY 50
+Magic / Dunder Methods
+■ W H AT  Y O U  W I L L L E A R N
+Dunder methods (double-underscore methods) let your objects work with Python's built-in features. 
+__str__  decides what print(obj)  shows. __len__  decides what len(obj)  returns.
+They make your custom objects feel like natural, built-in Python types.
+■ C O D E  E X A M P L E
+class Hero:
+def __init__(self, name):
+self.name = name
+def __str__(self):
+return f"Hero<{self.name}>"
+print(Hero("Ava"))   # Hero<Ava>
+__str__ gives your object a friendly printed form.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Speaking Statue
+Goal: Teach a statue object how to describe itself when printed.
+Setup: A statue prints as confusing gibberish when examined.
+Win Condition: Add a __str__ method so printing the object gives a clear description. The statue speaks its
+name proudly.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art ornate statue with a clear glowing nameplate and speech bubble describing itself,
+a robot hero reading it, dark museum hall, neon teal text glow, 16-bit RPG aesthetic.
+CodeQuest Academy · Page 55 of 66
+
+--- PAGE 56 ---
+M O N T H  3  ·  W E E K  11
+Files, Modules & Libraries
+This week your programs gain memory and reach: saving data to files, borrowing powerful code from modules,
+and using Python's built-in libraries to do amazing things in a few lines.
+DAY 51
+Reading Files
+■ W H AT  Y O U  W I L L L E A R N
+Programs can read text files from your computer. The safe way is the with open(...)  block — it opens
+the file and closes it automatically when done.
+open("data.txt", "r")  opens for reading. .read()  grabs everything; looping over the file gives one
+line at a time.
+■ C O D E  E X A M P L E
+with open("quest.txt", "r") as f:
+for line in f:
+print(line.strip())
+'with' guarantees the file is closed properly.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Ancient Tome
+Goal: Read a scroll file line by line to learn the secret path.
+Setup: An ancient tome holds the directions, but only readable line by line.
+Win Condition: Open the file with 'with' and loop its lines, printing each. The full path is revealed.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art ancient glowing tome on a lectern with lines of light rising from its pages, a
+robot scholar hero reading, dark library, neon teal text streams, 16-bit RPG aesthetic.
+CodeQuest Academy · Page 56 of 66
+
+--- PAGE 57 ---
+DAY 52
+Writing Files
+■ W H AT  Y O U  W I L L L E A R N
+To save data, open a file in write mode "w"  (replaces everything) or append mode "a"  (adds to the
+end). Then use .write() .
+Writing to files is how a program remembers things between runs — save games, high scores, settings,
+logs.
+■ C O D E  E X A M P L E
+with open("score.txt", "w") as f:
+    f.write("Player: Ava\n")
+    f.write("Score: 980\n")
+The \n adds a new line — without it, text runs together.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Memory Stone
+Goal: Carve the hero's progress into a save-file stone.
+Setup: Progress is lost each visit because nothing is saved.
+Win Condition: Open a file in write mode and save the hero's stats. The memory stone now remembers
+across visits.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art glowing rune stone being engraved with save-data text by a beam of light, a robot
+hero placing it on a pedestal, dark shrine, neon teal engraving glow, 16-bit RPG aesthetic.
+CodeQuest Academy · Page 57 of 66
+
+--- PAGE 58 ---
+DAY 53
+Modules — Borrowing Code
+■ W H AT  Y O U  W I L L L E A R N
+A module is a file of ready-made code you can use. You bring it in with import . Python ships with
+hundreds of useful modules.
+You can also split your own project into modules — keep related functions in one file and import  them
+where needed. It keeps big projects organised.
+■ C O D E  E X A M P L E
+import random
+roll = random.randint(1, 6)
+print(f"You rolled a {roll}")
+One import line unlocks a whole toolbox of code.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Tool Library
+Goal: Import a power module to gain a new ability instantly.
+Setup: A locked ability shelf can be unlocked by importing the right module.
+Win Condition: Import a module and use one of its functions. The new ability is unlocked for the hero.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art grand library with glowing labelled module books flying off shelves into a robot
+hero's hands, dark archive, neon teal book glow, 16-bit RPG aesthetic.
+CodeQuest Academy · Page 58 of 66
+
+--- PAGE 59 ---
+DAY 54
+Useful Built-in Libraries
+■ W H AT  Y O U  W I L L L E A R N
+Three friendly modules to know now. random  makes randomness — picks, shuffles, dice. math  has
+advanced math like square roots. datetime  works with dates and times.
+You do not need to memorise them — just know they exist and look up what you need.
+■ C O D E  E X A M P L E
+import random, math
+print(random.choice(["A", "B", "C"]))
+print(math.sqrt(144))
+print(round(math.pi, 2))
+Standard libraries give you power for free.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Three Artifacts
+Goal: Use three artifact-modules to solve three puzzle rooms.
+Setup: Three rooms each need a different built-in power: chance, math, time.
+Win Condition: Use random, math, and datetime to solve each room. All three artifacts activate.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art chamber with three glowing artifacts on pedestals labelled chance, math, and
+time, a robot hero choosing one, dark vault, neon multicolour glow, 16-bit RPG aesthetic.
+CodeQuest Academy · Page 59 of 66
+
+--- PAGE 60 ---
+DAY 55
+JSON — Saving Structured Data
+■ W H AT  Y O U  W I L L L E A R N
+JSON is a text format for storing structured data — perfect for dictionaries and lists. The json  module
+converts between Python objects and JSON text.
+json.dump()  saves an object to a file; json.load()  reads it back. This is the standard way games and
+apps store save data and settings.
+■ C O D E  E X A M P L E
+import json
+save = {"name": "Ava", "level": 7}
+with open("save.json", "w") as f:
+    json.dump(save, f)
+A whole dictionary saved as a tidy, readable file.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Crystal Archive
+Goal: Store a full hero profile as a structured save crystal.
+Setup: A character's whole profile must survive being saved and reloaded.
+Win Condition: Use json.dump to save a profile dictionary and json.load to restore it. The archive verifies the
+data intact.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art glowing data crystal storing a structured hero profile with visible labelled
+fields inside, a robot archivist hero, dark vault, neon teal data glow, 16-bit RPG
+aesthetic.
+CodeQuest Academy · Page 60 of 66
+
+--- PAGE 61 ---
+M O N T H  3  ·  W E E K  1 2
+Final Quest — Build Real Programs
+The grand finale. This week you bring every skill together to plan, build, and polish a complete program — your
+capstone — and graduate as a Python coder.
+DAY 56
+Planning a Program
+■ W H AT  Y O U  W I L L L E A R N
+Before writing code, real programmers plan. Break the goal into small steps in plain words. Decide what
+data you need (variables, lists, dictionaries) and what actions you need (functions).
+A good plan turns a scary project into a checklist of tiny, doable tasks. Today you design — no coding yet,
+just thinking clearly.
+■ C O D E  E X A M P L E
+# PLAN (written as comments first)
+# 1. store rooms in a dictionary
+# 2. show the current room
+# 3. ask the player where to go
+# 4. repeat until they reach the exit
+Comments make a great planning sketch before real code.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Architect's Table
+Goal: Draft a build-plan before construction begins.
+Setup: A blueprint table where the final dungeon must be designed first.
+Win Condition: Write out the program plan as ordered comments. The blueprint is approved and building
+unlocks.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art architect's table covered in glowing blueprints and plan notes, a robot hero
+sketching with a light-pen, dark planning room, neon teal blueprint lines, 16-bit RPG
+aesthetic.
+CodeQuest Academy · Page 61 of 66
+
+--- PAGE 62 ---
+DAY 57
+Building the Logic
+■ W H AT  Y O U  W I L L L E A R N
+Now you turn the plan into code, one step at a time. Build the smallest working version first, test it, then
+add the next piece.
+This is called incremental building — never write the whole thing at once. A program that does one thing
+well beats a giant one that does not run.
+■ C O D E  E X A M P L E
+rooms = {"hall": "cave", "cave": "exit"}
+place = "hall"
+while place != "exit":
+print("You are in the", place)
+    place = rooms[place]
+print("You escaped!")
+A tiny working core you can grow step by step.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Foundation Stones
+Goal: Lay the core working logic of the final dungeon.
+Setup: The dungeon has a plan but no working mechanics yet.
+Win Condition: Code the smallest working version of the dungeon loop. The foundation activates and the
+structure rises.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art dungeon being constructed from glowing foundation stones snapping into place, a
+robot builder hero directing them, dark construction site, neon teal build light, 16-bit
+RPG aesthetic.
+CodeQuest Academy · Page 62 of 66
+
+--- PAGE 63 ---
+DAY 58
+Polishing & Error-Proofing
+■ W H AT  Y O U  W I L L L E A R N
+A finished program handles mistakes kindly. Add try/except  around user input, give clear messages,
+and test every path — including wrong answers.
+Polish also means readable code: good names, helpful comments, and consistent style. This is what
+separates a hobby script from a real program.
+■ C O D E  E X A M P L E
+def ask_number():
+while True:
+try:
+return int(input("Pick a number: "))
+except ValueError:
+print("Please type digits only.")
+A loop + try/except = input that simply cannot break.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Stress Test
+Goal: Make the dungeon survive every wrong move a player makes.
+Setup: Test players are deliberately breaking the dungeon with bad input.
+Win Condition: Add error handling and clear messages everywhere. The dungeon withstands every stress
+test.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art dungeon being safety-tested, glowing shield barriers absorbing chaotic wrong
+inputs, a robot QA hero with a checklist, dark testing chamber, neon teal shields, 16-bit
+RPG aesthetic.
+CodeQuest Academy · Page 63 of 66
+
+--- PAGE 64 ---
+DAY 59
+Capstone — The Text Adventure Engine
+■ W H AT  Y O U  W I L L L E A R N
+Your capstone: a complete text adventure. It uses dictionaries for rooms, functions for actions, loops for
+the game cycle, classes for the player, files for saving, and error handling for safety.
+This single project proves you can combine every Month-1-to-3 skill into something real and fun.
+■ C O D E  E X A M P L E
+class Player:
+def __init__(self):
+self.room = "start"
+self.items = []
+def play(p):
+while p.room != "exit":
+# show room, take command, move player
+pass
+Classes + dicts + loops + functions — your full toolkit.
+■ TO D AY ' S  G A M E  L E V E L
+★ BOSS: The Grand Dungeon
+Goal: Build and complete your own full text-adventure game.
+Setup: The final dungeon: a complete game you design and code yourself.
+Win Condition: Build the adventure engine using every skill learned. Beat your own dungeon to claim the
+Capstone trophy.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art epic multi-room dungeon shown as a connected map glowing with activity, a robot
+hero standing victorious at the center, dark grand cavern, neon teal and gold light, 16-bit
+RPG boss scene.
+CodeQuest Academy · Page 64 of 66
+
+--- PAGE 65 ---
+DAY 60
+Graduation — Review & What's Next
+■ W H AT  Y O U  W I L L L E A R N
+You did it! In three months you went from print("hello")  to building a complete program with classes,
+files, and error handling.
+What's next: keep building projects you care about, explore libraries like requests  (web) or pygame
+(games), and try a new challenge each week. The best way to keep growing is to keep coding.
+■ C O D E  E X A M P L E
+print("Python journey: Month 1 to 3 complete!")
+print("Next stop: build, build, build.")
+The end of the course is the start of your real projects.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Graduation Hall
+Goal: Walk the hall of trophies and accept the Python Coder title.
+Setup: A grand hall displays every trophy earned across 12 weeks.
+Win Condition: Review all earned trophies and step onto the graduation platform. The 'Python Coder' title is
+awarded.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art grand graduation hall lined with glowing trophies on pedestals, a robot hero on a
+platform receiving a 'Python Coder' title banner, confetti of light, dark hall, neon teal
+and gold celebration, 16-bit RPG aesthetic.
+CodeQuest Academy · Page 65 of 66
+
+--- PAGE 66 ---
+Quest Complete
+You have reached the end of the Python 3-Month Quest.
+Sixty days ago you started from zero. You now understand variables, loops, decisions, collections, functions,
+objects, and how to build complete programs. More importantly, you have learned to think like a programmer.
+Keep the streak alive: pick a small personal project — a quiz game, a budget tracker, a tiny tool you wish existed
+— and build it. Real growth comes from building things you care about.
+Your next quest: continue with the CodeQuest Java track, then move into the platform's RPG Sandbox to build
+full games with your code. The adventure is only beginning.
+★ Congratulations, CodeQuest Python Graduate ★
+CodeQuest Academy · Page 66 of 66

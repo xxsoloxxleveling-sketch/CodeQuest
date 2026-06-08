@@ -1,0 +1,1944 @@
+
+--- PAGE 1 ---
+C O D E Q U E S T  A C A D E M Y
+The Java
+3-Month Quest
+A complete day-by-day adventure that teaches Java from absolute
+zero — explained in very easy words, with a playable game level
+and an AI image prompt for every single day.
+60 Daily Lessons
+12 Weekly Quests
+60 Game Levels
+60 Art Prompts
+Beginner Friendly
+A gamified learning workbook — Learn by playing.
+Part of the CodeQuest Academy curriculum series · Java Track
+
+--- PAGE 2 ---
+How This Quest Works
+Welcome, adventurer. This workbook turns learning Java into a 12-week role-playing game. Here is
+everything you need to know before Day 1.
+The Structure
+Your journey is 3 months long, split into 12 weeks. Each week is a themed quest with 5 daily lessons — that
+is 60 days of Java in total. Do one day at a time; never rush. Mastery beats speed.
+What Every Day Contains
+Section
+What it is
+What You Will Learn
+The day's idea explained in very simple, friendly words — as if a patient friend were
+teaching you.
+Code Example
+A short, real Java program showing the idea in action. Type it yourself — do not just read
+it.
+Today's Game Level
+A playable RPG level idea. It has a goal, a setup, and a win condition your code must
+achieve.
+Image Generation
+Prompt
+A ready-to-use prompt. Paste it into any AI image tool to create the artwork for that day's
+game level.
+How to Use the Game Levels
+The game levels are the heart of CodeQuest. Each one describes a small puzzle the hero must solve using
+the day's new skill. You can play them three ways:
+Imagine & solve: read the level, then write Java code that would satisfy the win condition. This works with
+just paper or any code editor.
+Build it: if you are using the CodeQuest platform, the level becomes a real playable puzzle on a 2D grid.
+Draw it: use the image prompt to generate the level art and collect a visual badge for every day you
+complete.
+XP & Streaks: Give yourself +50 XP for finishing a day and +250 XP for a Friday boss level. Keep a daily streak
+— the habit matters more than any single lesson.
+Golden Rule: If something does not make sense, that is normal and good. Re-read it slowly, type the code,
+change one thing, and see what happens. Curiosity is your strongest weapon.
+When you finish this Java track, the Python track awaits — a second 3-month quest in the CodeQuest series.
+• 
+• 
+• 
+CodeQuest Academy · Page 2 of 66
+
+--- PAGE 3 ---
+Map of the Quest
+Your full 60-day path through Java. Each week is one themed quest.
+Month 1 · Week 1 — Getting Started with Java
+Day 01   What is Java & Your First Program
+Day 02   Variables & Primitive Types
+Day 03   Numbers and Arithmetic
+Day 04   Strings in Java
+Day 05   Comments & Reading Input (Scanner)
+Month 1 · Week 2 — Operators & Working with Data
+Day 06   Type Casting (Converting Types)
+Day 07   String Methods & Concatenation
+Day 08   More Operators (Modulo & Increment)
+Day 09   Constants & final
+Day 10   Mini Project — The Greeting Program
+Month 1 · Week 3 — Making Decisions
+Day 11   Booleans
+Day 12   Comparison Operators
+Day 13   The if / else Statement
+Day 14   else-if Chains & Nested if
+Day 15   The switch Statement & Ternary
+Month 1 · Week 4 — Loops in Java
+Day 16   The while Loop
+Day 17   The for Loop
+Day 18   do-while & break/continue
+Day 19   Nested Loops
+Day 20   Mini Project — Number Guessing Game
+Month 2 · Week 5 — Arrays — Storing Many Values
+CodeQuest Academy · Page 3 of 66
+
+--- PAGE 4 ---
+Day 21   What is an Array?
+Day 22   Accessing & Changing Array Elements
+Day 23   Looping Through Arrays
+Day 24   2D Arrays
+Day 25   Array Algorithms (Sum, Max, Search)
+Month 2 · Week 6 — Methods — Reusable Code Blocks
+Day 26   What is a Method?
+Day 27   Parameters & Return Values
+Day 28   Method Overloading
+Day 29   Recursion
+Day 30   Mini Project — The Toolkit of Methods
+Month 2 · Week 7 — Objects & Classes — Your Own Blueprints
+Day 31   What is an Object? Thinking in Blueprints
+Day 32   Writing Your First Class with Fields
+Day 33   Methods Inside a Class — Giving Objects Actions
+Day 34   Constructors — Building Objects the Right Way
+Day 35   The this Keyword & Many Objects
+Month 2 · Week 8 — OOP Core — Safe, Organised Objects
+Day 36   Encapsulation & Access Modifiers
+Day 37   Getters and Setters — The Safe Doors
+Day 38   Static Fields & Methods — Shared by the Whole Class
+Day 39   Packages & Organising Code
+Day 40   Mini Project — The Bank Account
+Month 3 · Week 9 — Inheritance & Polymorphism
+Day 41   Inheritance — Building on an Existing Class
+Day 42   super and Overriding Methods
+Day 43   Polymorphism — One Command, Many Forms
+CodeQuest Academy · Page 4 of 66
+
+--- PAGE 5 ---
+Day 44   Abstract Classes — Blueprints That Must Be Finished
+Day 45   The Object Class & toString
+Month 3 · Week 10 — Interfaces & Collections
+Day 46   Interfaces — Pure Contracts of Ability
+Day 47   ArrayList — A List That Grows
+Day 48   HashMap — Pairs of Key and Value
+Day 49   Generics — Telling Collections What They Hold
+Day 50   Mini Project — The Contact Book
+Month 3 · Week 11 — Exceptions & Files
+Day 51   Exceptions & try-catch
+Day 52   Throwing & Custom Exceptions
+Day 53   Reading Data from Files
+Day 54   Writing Data to Files
+Day 55   Enhanced for & Iterators
+Month 3 · Week 12 — Final Quest — Build Your Capstone
+Day 56   Planning a Real Program
+Day 57   Building the Core Logic
+Day 58   Polishing & Handling Mistakes
+Day 59   Capstone — The Inventory Management System
+Day 60   Graduation — You Are a Java Developer
+CodeQuest Academy · Page 5 of 66
+
+--- PAGE 6 ---
+M O N T H  1  ·  W E E K  1
+Getting Started with Java
+Welcome, future Java developer! Java powers Android apps, huge business systems, and games. This week
+you write your first Java programs from scratch — no prior experience needed.
+DAY 01
+What is Java & Your First Program
+■ W H AT  Y O U  W I L L L E A R N
+Java is a programming language used everywhere — phones, banks, big websites. Java code is first 
+compiled (translated) and then run by the JVM (Java Virtual Machine), which is why Java runs on almost
+any device.
+Every Java program lives inside a class, and starts running from a special main  method. To show text
+you use System.out.println() . Every statement ends with a semicolon ; .
+■ C O D E  E X A M P L E
+public class Main {
+public static void main(String[] args) {
+System.out.println("Hello, world!");
+    }
+}
+The main method is where every Java program begins.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Awakening
+Goal: Make your robot hero speak its first words inside the main method.
+Setup: A 5x5 grid. The robot is asleep until the main method runs.
+Win Condition: Write a class with a main method that prints 'I am awake'. The robot powers on and the gate
+opens.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art friendly robot waking up inside a glowing 5x5 grid, a speech bubble reading
+'Hello world', a faint floating 'main()' label, dark navy IDE background with cyan grid
+lines, neon teal glow, 16-bit RPG aesthetic, isometric view.
+CodeQuest Academy · Page 6 of 66
+
+--- PAGE 7 ---
+DAY 02
+Variables & Primitive Types
+■ W H AT  Y O U  W I L L L E A R N
+A variable stores a value. In Java you must state the type when you create one — Java is strict about
+this.
+The main primitive types are: int  (whole numbers), double  (decimals), boolean  (true/false), and 
+char  (a single letter). For words you use String .
+Pattern: type name = value;
+■ C O D E  E X A M P L E
+int age = 12;
+double price = 4.99;
+boolean isReady = true;
+String name = "Sara";
+System.out.println(name);
+Every variable in Java declares its type up front.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Memory Crystal
+Goal: Store the password in a correctly-typed crystal.
+Setup: A locked door needs a String password crystal labelled correctly.
+Win Condition: Declare a String variable holding the password and print it. The door recognises the type and
+opens.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art glowing crystal on a pedestal with a type-label tag 'String', the word inside it,
+a robot hero examining it, dark dungeon, neon cyan and purple light, 16-bit RPG aesthetic.
+CodeQuest Academy · Page 7 of 66
+
+--- PAGE 8 ---
+DAY 03
+Numbers and Arithmetic
+■ W H AT  Y O U  W I L L L E A R N
+Java does math with + , - , * , / . A key rule: int / int  gives a whole-number result (it drops the
+decimal).
+So 7 / 2  is 3 , not 3.5. If you want the decimal, at least one number must be a double : 7.0 / 2
+gives 3.5.
+■ C O D E  E X A M P L E
+int apples = 8;
+int friends = 4;
+int each = apples / friends;
+System.out.println("Each gets " + each);
+int division drops the decimal — a classic Java surprise.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Coin Bridge
+Goal: Calculate exactly how many coins build the bridge.
+Setup: A bridge with 6 gaps; each plank costs 3 coins.
+Win Condition: Compute 6 * 3 and print it. When 18 appears the planks materialise.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art broken wooden bridge over a glowing chasm with six gap markers, stacks of golden
+coins, a robot hero with floating numbers '6 x 3 = 18', dark cyan canyon, neon math
+symbols, 16-bit RPG art.
+CodeQuest Academy · Page 8 of 66
+
+--- PAGE 9 ---
+DAY 04
+Strings in Java
+■ W H AT  Y O U  W I L L L E A R N
+A String holds text and always uses double quotes "" . You join strings with +  — this is called 
+concatenation.
+When you add a number to a String with + , Java automatically turns the number into text: "Score: " +
+50  becomes "Score: 50" .
+■ C O D E  E X A M P L E
+String first = "Code";
+String last = "Quest";
+String title = first + " " + last;
+System.out.println(title);
++ glues strings (and numbers-as-text) together.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Spell Scroll
+Goal: Combine two magic words into one powerful spell.
+Setup: Two glowing word-runes float in a chamber: 'FIRE' and 'STORM'.
+Win Condition: Concatenate them into one String and print it. 'FIRESTORM' clears the path.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art magic chamber with two floating glowing runes 'FIRE' and 'STORM' merging into
+'FIRESTORM', a robot wizard hero raising a staff, dark purple walls, neon orange and teal
+glow, 16-bit RPG aesthetic.
+CodeQuest Academy · Page 9 of 66
+
+--- PAGE 10 ---
+DAY 05
+Comments & Reading Input (Scanner)
+■ W H AT  Y O U  W I L L L E A R N
+Comments are notes Java ignores: //  for one line, /* ... */  for several.
+To read what a user types, Java uses a Scanner. You create one linked to System.in , then call methods
+like nextLine()  for text or nextInt()  for whole numbers.
+■ C O D E  E X A M P L E
+import java.util.Scanner;
+// ...inside main:
+Scanner sc = new Scanner(System.in);
+System.out.print("Your name? ");
+String name = sc.nextLine();
+System.out.println("Welcome, " + name);
+Scanner is Java's tool for listening to the user.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Gatekeeper's Question
+Goal: Use a Scanner to learn the player's name and greet them.
+Setup: A talking statue gate will not open until it knows who you are.
+Win Condition: Create a Scanner, read a name with nextLine(), and print a greeting. The gate rises.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art giant stone gatekeeper statue with glowing eyes, a robot hero typing on a
+floating keyboard, an input box hovering in the air, dark temple entrance, neon teal and
+gold light, 16-bit RPG style.
+CodeQuest Academy · Page 10 of 66
+
+--- PAGE 11 ---
+M O N T H  1  ·  W E E K  2
+Operators & Working with Data
+This week you shape data: converting between types, polishing strings with methods, and using all of Java's
+operators. You finish with your first full program.
+DAY 06
+Type Casting (Converting Types)
+■ W H AT  Y O U  W I L L L E A R N
+Casting means converting a value from one type to another. To turn a double  into an int , write the
+target type in brackets: (int) 3.9  gives 3 (it cuts the decimal).
+To turn text into a number, use helper methods: Integer.parseInt("42")  and 
+Double.parseDouble("3.5") .
+■ C O D E  E X A M P L E
+double d = 9.7;
+int i = (int) d;          // 9
+int n = Integer.parseInt("100");
+System.out.println(i + n);
+Casting bridges types so they can work together.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Number Forge
+Goal: Forge a text-ingot into a real number.
+Setup: A forge accepts only true numbers, not text that looks like a number.
+Win Condition: Use Integer.parseInt to convert the input, then do math and print it. The forge accepts the
+result.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art glowing forge with a conveyor belt turning a dull grey 'text' ingot into a bright
+golden 'number' ingot, a robot blacksmith hero, dark workshop, neon orange furnace glow,
+16-bit RPG style.
+CodeQuest Academy · Page 11 of 66
+
+--- PAGE 12 ---
+DAY 07
+String Methods & Concatenation
+■ W H AT  Y O U  W I L L L E A R N
+Strings carry built-in methods you call with a dot. .length()  counts characters, .toUpperCase()
+shouts, .toLowerCase()  whispers, .trim()  removes edge spaces, and .charAt(0)  grabs one letter.
+Java also has String.format()  for clean sentences with placeholders, similar to a fill-in-the-blank.
+■ C O D E  E X A M P L E
+String name = "  ava  ".trim().toUpperCase();
+System.out.println(name);
+System.out.println("Letters: " + name.length());
+Methods chain together to clean and inspect text.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Echo Cavern
+Goal: Repair a messy magic word so the echo spell works.
+Setup: A cavern echoes only with a clean, correctly-cased word.
+Win Condition: Use trim() and toUpperCase() to fix the word, then print it. The cavern echoes clearly.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art crystal cavern with sound-wave rings, a glitchy messy word becoming a clean
+glowing word, a robot hero with headphones, dark blue cave, neon teal ripples, 16-bit RPG
+aesthetic.
+CodeQuest Academy · Page 12 of 66
+
+--- PAGE 13 ---
+DAY 08
+More Operators (Modulo & Increment)
+■ W H AT  Y O U  W I L L L E A R N
+%  is the modulo operator — it gives the remainder of a division. 17 % 5  is 2. It is perfect for checking
+even/odd: n % 2 == 0  means even.
+++  adds 1 to a variable; --  subtracts 1. +=  and -=  add or subtract any amount in shorthand.
+■ C O D E  E X A M P L E
+int total = 17;
+int boxes = total / 5;
+int left = total % 5;
+System.out.println(boxes + " boxes, " + left + " left");
+/ and % team up to split things into groups.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Treasure Split
+Goal: Divide treasure into equal chests and find the leftovers.
+Setup: 17 gems must be packed into chests of 5; leftovers open a secret room.
+Win Condition: Use / for full chests and % for leftovers, then print both. The secret room opens.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art treasure room with glowing gems sorted into chests of five, a brighter leftover
+pile, a robot hero counting, dark stone vault, neon green and gold light, 16-bit RPG art.
+CodeQuest Academy · Page 13 of 66
+
+--- PAGE 14 ---
+DAY 09
+Constants & final
+■ W H AT  Y O U  W I L L L E A R N
+Sometimes a value should never change — like the number of seconds in a minute. Mark it with the 
+final  keyword to make it a constant.
+If you try to change a final  variable, Java refuses to compile. By convention, constant names are
+written in ALL_CAPS so they stand out.
+■ C O D E  E X A M P L E
+final int MAX_HP = 100;
+final double PI = 3.14159;
+System.out.println("Max HP is " + MAX_HP);
+// MAX_HP = 200; -> compile error
+final locks a value so it can never be changed by mistake.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Sealed Law
+Goal: Set an unbreakable rule value for the dungeon.
+Setup: A dungeon law tablet must hold a value that nothing can alter.
+Win Condition: Declare a final constant and print it; attempts to change it fail. The law is sealed and the gate
+opens.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art ancient law tablet glowing with a locked constant value, chains of light sealing
+it, a robot hero bowing, dark temple, neon gold and teal glow, 16-bit RPG aesthetic.
+CodeQuest Academy · Page 14 of 66
+
+--- PAGE 15 ---
+DAY 10
+Mini Project — The Greeting Program
+■ W H AT  Y O U  W I L L L E A R N
+Combine Weeks 1-2 into one real program. The Greeting Program asks the user questions and prints a
+personalised, framed card.
+Plan: create a Scanner, read a name and an age, convert the age with parseInt if needed, do a
+calculation, and print a tidy multi-line card.
+■ C O D E  E X A M P L E
+Scanner sc = new Scanner(System.in);
+System.out.print("Name? ");
+String name = sc.nextLine();
+System.out.print("Age? ");
+int age = sc.nextInt();
+System.out.println("Hello " + name + "! In 10 years: " + (age + 10));
+Input, conversion, calculation, output — a full program.
+■ TO D AY ' S  G A M E  L E V E L
+★ BOSS: The Welcome Hall
+Goal: Build a working greeting machine to clear Month 1.
+Setup: A grand hall with a deactivated greeting machine and waiting visitors.
+Win Condition: Write a program that reads name and age and prints a framed card. The machine lights up
+and the doors open.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art grand hall with a large friendly greeting robot machine lit with neon panels, a
+glowing framed welcome card, a hero robot pressing a button, golden hall, teal and purple
+light, 16-bit RPG style.
+CodeQuest Academy · Page 15 of 66
+
+--- PAGE 16 ---
+M O N T H  1  ·  W E E K  3
+Making Decisions
+This week your Java programs become smart: comparing values and choosing different paths with if, else,
+switch, and the ternary operator.
+DAY 11
+Booleans
+■ W H AT  Y O U  W I L L L E A R N
+A boolean  variable holds exactly one of two values: true  or false  (lowercase in Java).
+Booleans answer yes/no questions about your program — "is the player alive?", "is the door locked?"
+They are the foundation of every decision.
+■ C O D E  E X A M P L E
+boolean isRaining = true;
+boolean hasUmbrella = false;
+System.out.println("Raining? " + isRaining);
+A boolean is a simple on/off, yes/no fact.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Switch Room
+Goal: Set the correct true/false switches to power the exit.
+Setup: Three lever-switches on a wall; the exit needs a set pattern.
+Win Condition: Create boolean variables matching the pattern and print them. The lights match and the exit
+unlocks.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art control room with three large lever switches, two ON and one OFF, status panels
+showing true/false, a robot hero reaching for a lever, dark metal walls, neon green and red
+lights, 16-bit RPG art.
+CodeQuest Academy · Page 16 of 66
+
+--- PAGE 17 ---
+DAY 12
+Comparison Operators
+■ W H AT  Y O U  W I L L L E A R N
+Comparisons produce booleans. Java uses ==  equal, !=  not equal, > , < , >= , <= .
+Important: for comparing Strings use .equals() , not == . ==  compares numbers and true/false;
+.equals()  compares the actual text.
+■ C O D E  E X A M P L E
+int score = 75;
+System.out.println(score > 50);   // true
+String a = "hi";
+System.out.println(a.equals("hi"));
+Numbers use ==; Strings use .equals().
+■ TO D AY ' S  G A M E  L E V E L
+★ The Weighing Scales
+Goal: Compare two treasure weights to find the heavier chest.
+Setup: Two chests on a giant scale; the heavier holds the key.
+Win Condition: Use > to compare weights and print the result. The scale tips toward the winner.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art giant golden balance scale with two treasure chests, one side lower, a glowing
+'>' symbol between them, a robot hero observing, dark vault, neon gold and teal light, 16-
+bit RPG diagram.
+CodeQuest Academy · Page 17 of 66
+
+--- PAGE 18 ---
+DAY 13
+The if / else Statement
+■ W H AT  Y O U  W I L L L E A R N
+The if  statement runs a block only when its condition is true. The condition goes in round brackets,
+and the block goes in curly braces { } .
+Add an else  block for what happens when the condition is false. Java uses braces, not indentation, to
+mark the block — but you should indent anyway for readability.
+■ C O D E  E X A M P L E
+int temp = 35;
+if (temp > 30) {
+System.out.println("It is hot!");
+} else {
+System.out.println("Comfortable.");
+}
+Braces mark exactly what belongs to the if and else.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Pressure Plate
+Goal: Extend the bridge only if the path is safe.
+Setup: A pressure plate triggers a bridge if a safety value is high enough.
+Win Condition: Write an if/else checking the safety value, printing 'Cross now' when safe. The bridge extends.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art stone pressure plate glowing on a dungeon floor, a bridge extending across a gap,
+a robot hero stepping carefully, a floating 'if safe' check, dark cavern, neon teal glow,
+16-bit RPG style.
+CodeQuest Academy · Page 18 of 66
+
+--- PAGE 19 ---
+DAY 14
+else-if Chains & Nested if
+■ W H AT  Y O U  W I L L L E A R N
+To test several conditions in order, chain them with else if . Java checks each from the top and runs
+the first true one.
+You can also place an if inside another if  — this is a nested if, used when one decision depends on
+another.
+■ C O D E  E X A M P L E
+int score = 82;
+if (score >= 90) {
+System.out.println("Grade A");
+} else if (score >= 75) {
+System.out.println("Grade B");
+} else {
+System.out.println("Keep going");
+}
+The first matching branch wins; the rest are skipped.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Three Doors
+Goal: Open the correct door based on the key's power level.
+Setup: Three doors — Gold, Silver, Bronze — chosen by key power.
+Win Condition: Use an if / else-if / else chain to print which door opens. The matching door swings wide.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art chamber with three glowing doors labelled Gold, Silver, Bronze, a branching beam
+of light selecting one, a robot hero with a glowing key, dark hall, neon multicolour glow,
+16-bit RPG aesthetic.
+CodeQuest Academy · Page 19 of 66
+
+--- PAGE 20 ---
+DAY 15
+The switch Statement & Ternary
+■ W H AT  Y O U  W I L L L E A R N
+When you check one variable against many fixed values, a switch  is cleaner than a long if-chain. Each 
+case  handles one value; break  ends it; default  catches the rest.
+The ternary operator is a one-line if: condition ? valueIfTrue : valueIfFalse .
+■ C O D E  E X A M P L E
+int day = 3;
+switch (day) {
+case 1: System.out.println("Mon"); break;
+case 3: System.out.println("Wed"); break;
+default: System.out.println("Other");
+}
+switch picks one case quickly; remember the break.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Rune Selector
+Goal: Match an incoming rune to its effect with a switch.
+Setup: A rune machine must react differently to each of several rune symbols.
+Win Condition: Use a switch with cases and a default to handle each rune. Every rune triggers the right
+effect.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art rune-reading machine with multiple labelled case-slots, a glowing rune dropping
+into the matching slot, a robot engineer hero, dark arcane workshop, neon teal and purple,
+16-bit RPG style.
+CodeQuest Academy · Page 20 of 66
+
+--- PAGE 21 ---
+M O N T H  1  ·  W E E K  4
+Loops in Java
+This week you learn Java's loops, so repeated work becomes effortless. You finish Month 1 by building a
+complete Number Guessing Game.
+DAY 16
+The while Loop
+■ W H AT  Y O U  W I L L L E A R N
+A while  loop repeats its block as long as the condition stays true. The condition is checked before each
+round.
+You must change something inside the loop so the condition eventually becomes false — otherwise it
+runs forever (an infinite loop).
+■ C O D E  E X A M P L E
+int count = 1;
+while (count <= 5) {
+System.out.println("Step " + count);
+    count++;
+}
+count++ moves the loop toward its stopping point.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Climbing Tower
+Goal: Climb a 5-floor tower one floor at a time with a loop.
+Setup: A tall tower; the hero starts at floor 1, treasure at the top.
+Win Condition: Use a while loop that climbs while the floor is 5 or less. The hero reaches the top.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art tall stone tower with five glowing floor markers, a robot hero climbing a ladder,
+repeating motion arrows, treasure chest on top, dark night sky, neon teal markers, 16-bit
+RPG aesthetic.
+CodeQuest Academy · Page 21 of 66
+
+--- PAGE 22 ---
+DAY 17
+The for Loop
+■ W H AT  Y O U  W I L L L E A R N
+A for  loop is best when you know how many times to repeat. It packs three parts into one line: start, 
+condition, and update.
+for (int i = 0; i < 5; i++)  means: start i at 0, keep going while i is below 5, add 1 each round.
+■ C O D E  E X A M P L E
+for (int i = 1; i <= 5; i++) {
+System.out.println("Counting: " + i);
+}
+Start, condition, update — all in one tidy line.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Stepping Stones
+Goal: Cross a river by stepping on stones 1 through 5.
+Setup: A river with numbered stepping stones 1-5.
+Win Condition: Use a for loop to step on each stone in order. The hero crosses to the far bank.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art river crossing with five glowing stepping stones in a row, a robot hero mid-hop,
+numbered positions, repeating arc motion lines, dark blue water, neon teal stone glow, 16-
+bit RPG art.
+CodeQuest Academy · Page 22 of 66
+
+--- PAGE 23 ---
+DAY 18
+do-while & break/continue
+■ W H AT  Y O U  W I L L L E A R N
+A do-while  loop runs the block once first, then checks the condition — useful for menus that must
+show at least once.
+Inside any loop, break  stops the whole loop immediately; continue  skips to the next round.
+■ C O D E  E X A M P L E
+for (int n = 1; n < 10; n++) {
+if (n == 6) break;
+if (n % 2 == 0) continue;
+System.out.println(n);   // 1 3 5
+}
+break exits the loop; continue skips one round.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Trap Corridor
+Goal: Run a corridor, skip trap tiles, stop at the exit.
+Setup: A 9-tile corridor with traps; tile 6 is the exit.
+Win Condition: Loop the tiles: continue past traps, break at the exit. The hero escapes safely.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art dungeon corridor of nine tiles, some glowing red as traps, an exit door at tile
+six, a robot hero leaping a trap, dark stone walls, neon hazard lights, 16-bit RPG style.
+CodeQuest Academy · Page 23 of 66
+
+--- PAGE 24 ---
+DAY 19
+Nested Loops
+■ W H AT  Y O U  W I L L L E A R N
+A loop can contain another loop — a nested loop. For each round of the outer loop, the inner loop runs
+fully.
+Nested loops are perfect for grids and patterns: the outer loop handles rows, the inner loop handles
+columns.
+■ C O D E  E X A M P L E
+for (int row = 1; row <= 3; row++) {
+for (int col = 1; col <= 3; col++) {
+System.out.print("* ");
+    }
+System.out.println();
+}
+Outer loop = rows, inner loop = columns of a grid.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Grid Garden
+Goal: Plant flowers on every tile of a 3x3 garden.
+Setup: A 3x3 garden grid must be fully planted, row by row.
+Win Condition: Use a nested loop to visit every tile and plant it. The whole garden blooms.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art 3x3 garden grid with glowing flowers appearing tile by tile, a robot gardener
+hero, repeating row and column arrows, dark soil, neon teal and pink glow, 16-bit RPG
+aesthetic.
+CodeQuest Academy · Page 24 of 66
+
+--- PAGE 25 ---
+DAY 20
+Mini Project — Number Guessing Game
+■ W H AT  Y O U  W I L L L E A R N
+Month 1 finale! Build a guessing game: the program holds a secret number, the player guesses, and it
+replies 'too high' or 'too low' until they win.
+Plan: store a secret number, loop with while, read a guess with Scanner, compare it, give a hint, and
+break on a correct guess. Count tries for a score.
+■ C O D E  E X A M P L E
+int secret = 7, guess = 0, tries = 0;
+while (guess != secret) {
+    guess = sc.nextInt();
+    tries++;
+if (guess < secret) System.out.println("Too low");
+else if (guess > secret) System.out.println("Too high");
+}
+System.out.println("Won in " + tries);
+Loop + decisions + counter — Month 1 in one game.
+■ TO D AY ' S  G A M E  L E V E L
+★ BOSS: The Oracle's Riddle
+Goal: Defeat the Oracle by guessing its secret number.
+Setup: A glowing Oracle holds a secret number and gives high/low hints.
+Win Condition: Build the full guessing game with hints and a counter. Guess right to win the Month-1 trophy.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art mystical Oracle of glowing crystals floating above an altar, a robot hero
+guessing numbers with higher/lower hint arrows, dark temple, neon purple and cyan energy,
+16-bit RPG boss scene.
+CodeQuest Academy · Page 25 of 66
+
+--- PAGE 26 ---
+M O N T H  2  ·  W E E K  5
+Arrays — Storing Many Values
+This week you learn arrays — fixed-size containers that hold many values of the same type. Arrays are the
+foundation of lists, grids, and data processing in Java.
+DAY 21
+What is an Array?
+■ W H AT  Y O U  W I L L L E A R N
+An array holds many values of the same type in a fixed-size row. You declare it with the type and square
+brackets.
+Create one with new  and a size, or list the values directly. Once created, an array's size cannot change.
+Its length is in array.length .
+■ C O D E  E X A M P L E
+int[] scores = {90, 75, 88};
+String[] team = new String[3];
+team[0] = "Ana";
+System.out.println(scores.length);
+An array is one variable holding many same-typed values.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Backpack
+Goal: Pack three items into a fixed-size backpack array.
+Setup: An array-backpack with exactly three slots must be filled.
+Win Condition: Create a size-3 array, fill all slots, and print the length. The backpack seals.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art adventurer's backpack with three numbered glowing slots holding a sword, shield,
+and potion, a robot hero packing, dark wooden table, neon teal slot outlines, 16-bit RPG
+inventory aesthetic.
+CodeQuest Academy · Page 26 of 66
+
+--- PAGE 27 ---
+DAY 22
+Accessing & Changing Array Elements
+■ W H AT  Y O U  W I L L L E A R N
+Each array slot has an index, starting at 0. The first item is arr[0] , the last is arr[arr.length - 1] .
+Read a slot with brackets; change it by assigning: arr[1] = 50; . Going past the last index causes an
+out-of-bounds error.
+■ C O D E  E X A M P L E
+int[] arr = {10, 20, 30};
+System.out.println(arr[0]);   // 10
+arr[1] = 99;
+System.out.println(arr[1]);   // 99
+Index 0 is first; the last index is length - 1.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Numbered Vaults
+Goal: Open the vault at a specific index to get the artifact.
+Setup: Vaults numbered from 0; the quest says open index 2.
+Win Condition: Read and print the array element at the requested index. The correct vault opens.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art row of metal vault doors labelled 0,1,2,3, vault 2 glowing open, a robot hero
+reaching inside, dark bank vault, neon teal numbers, 16-bit RPG style.
+CodeQuest Academy · Page 27 of 66
+
+--- PAGE 28 ---
+DAY 23
+Looping Through Arrays
+■ W H AT  Y O U  W I L L L E A R N
+To visit every element, use a loop. A normal for  loop gives you the index. The simpler enhanced for
+(for-each) hands you each value directly.
+for (int s : scores)  reads as "for each score s in scores."
+■ C O D E  E X A M P L E
+int[] scores = {90, 75, 88};
+for (int s : scores) {
+System.out.println("Score: " + s);
+}
+The for-each loop is the cleanest way to read an array.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Roll Call
+Goal: Greet every guard by walking the whole array.
+Setup: A line of guards stored in an array, each needing a greeting.
+Win Condition: Loop the array with a for-each and greet each guard. All guards salute and step aside.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art line of robot guards at attention, a hero robot walking past greeting each,
+glowing index numbers above them, dark fortress courtyard, neon teal markers, 16-bit RPG
+aesthetic.
+CodeQuest Academy · Page 28 of 66
+
+--- PAGE 29 ---
+DAY 24
+2D Arrays
+■ W H AT  Y O U  W I L L L E A R N
+A 2D array is an array of arrays — a grid with rows and columns. You declare it with two pairs of brackets:
+int[][] grid .
+Access a cell with two indexes: grid[row][col] . A nested loop walks the whole grid.
+■ C O D E  E X A M P L E
+int[][] grid = {{1,2},{3,4}};
+System.out.println(grid[1][0]);   // 3
+for (int[] row : grid)
+for (int cell : row)
+System.out.print(cell + " ");
+Two indexes — [row][col] — pinpoint any cell.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Treasure Map Grid
+Goal: Read the treasure cell from a 2D map grid.
+Setup: A map stored as a grid; the treasure is at a known row and column.
+Win Condition: Access grid[row][col] and print it. The treasure spot is marked on the map.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art treasure map shown as a glowing grid of cells with row and column labels, an X
+marking one cell, a robot explorer hero, dark parchment, neon teal grid lines, 16-bit RPG
+style.
+CodeQuest Academy · Page 29 of 66
+
+--- PAGE 30 ---
+DAY 25
+Array Algorithms (Sum, Max, Search)
+■ W H AT  Y O U  W I L L L E A R N
+Three classic array tasks. Sum: start a total at 0 and add each element. Max: assume the first is biggest,
+then check every other element. Search: loop and compare until you find the target.
+These small patterns appear inside almost every real program.
+■ C O D E  E X A M P L E
+int[] a = {4, 9, 2, 7};
+int max = a[0];
+for (int x : a)
+if (x > max) max = x;
+System.out.println("Max: " + max);
+Compare against the current best to find the maximum.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Champion's Trial
+Goal: Find the strongest warrior in an array of stats.
+Setup: An array of warrior strength values; the strongest leads the army.
+Win Condition: Loop the array to find the maximum value and print it. The champion is crowned.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art lineup of robot warriors with glowing strength numbers above them, one glowing
+brightest as champion, a hero commander pointing, dark arena, neon gold and teal light, 16-
+bit RPG aesthetic.
+CodeQuest Academy · Page 30 of 66
+
+--- PAGE 31 ---
+M O N T H  2  ·  W E E K  6
+Methods — Reusable Code Blocks
+This week you learn methods — named blocks of code you can reuse. Methods keep Java programs
+organised, readable, and free of repetition. You finish with a method toolkit project.
+DAY 26
+What is a Method?
+■ W H AT  Y O U  W I L L L E A R N
+A method is a named block of code you can run whenever you want. You have used main  already —
+now you write your own.
+A simple method that returns nothing uses void . Mark methods static  for now so main  can call them
+directly.
+■ C O D E  E X A M P L E
+static void greet() {
+System.out.println("Welcome, hero!");
+}
+// in main:
+greet();
+greet();
+Defined once, called as many times as you like.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Spell Book
+Goal: Define a 'castLight' method and use it to light two rooms.
+Setup: Two dark rooms; the hero has a spell book but no spells yet.
+Win Condition: Write a void method that lights a room, then call it twice. Both rooms glow.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art glowing spell book open on a pedestal with a 'cast light' page, two dark rooms
+lighting up with teal orbs, a robot wizard hero, dark dungeon, neon teal magic, 16-bit RPG
+aesthetic.
+CodeQuest Academy · Page 31 of 66
+
+--- PAGE 32 ---
+DAY 27
+Parameters & Return Values
+■ W H AT  Y O U  W I L L L E A R N
+Methods can take parameters — typed inputs in the brackets — and send back a return value. State the
+return type before the name (e.g. int ), and use return  to hand a value back.
+■ C O D E  E X A M P L E
+static int add(int a, int b) {
+return a + b;
+}
+// in main:
+int sum = add(4, 9);
+System.out.println(sum);   // 13
+Parameters feed data in; return sends an answer out.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Calculation Altar
+Goal: Build a method that returns the damage value to win.
+Setup: An altar needs a calculated damage number to fire its beam.
+Win Condition: Write a method with parameters that returns a value, store it, and feed it to the altar. The
+beam fires.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art glowing altar with a method machine returning a bright number orb into a slot, a
+robot hero watching an energy beam charge, dark temple, neon purple and teal glow, 16-bit
+RPG aesthetic.
+CodeQuest Academy · Page 32 of 66
+
+--- PAGE 33 ---
+DAY 28
+Method Overloading
+■ W H AT  Y O U  W I L L L E A R N
+Java lets two methods share the same name as long as their parameters differ — this is overloading.
+Java picks the right one based on the arguments you pass.
+It is handy when the same idea works on different types or counts of inputs.
+■ C O D E  E X A M P L E
+static int area(int side) { return side * side; }
+static int area(int w, int h) { return w * h; }
+// area(5) -> square; area(4, 6) -> rectangle
+Same name, different parameters — Java chooses correctly.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Twin Spells
+Goal: Create two spells with one name that work differently.
+Setup: A spell name must behave differently depending on what is fed to it.
+Win Condition: Overload a method with two parameter sets and call both. Both spell forms work correctly.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art two glowing spell variants sharing one rune name, each producing a different
+effect, a robot wizard hero choosing, dark arcane hall, neon purple and teal glow, 16-bit
+RPG aesthetic.
+CodeQuest Academy · Page 33 of 66
+
+--- PAGE 34 ---
+DAY 29
+Recursion
+■ W H AT  Y O U  W I L L L E A R N
+Recursion is a method that calls itself to solve a smaller version of the problem. It needs a base case —
+a simple stopping condition — or it never ends.
+Classic example: factorial. 5! = 5 * 4!  down to 1! = 1 .
+■ C O D E  E X A M P L E
+static int factorial(int n) {
+if (n <= 1) return 1;          // base case
+return n * factorial(n - 1);
+}
+// factorial(5) -> 120
+The method shrinks the problem until the base case stops it.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Mirror Hall
+Goal: Pass through nested mirror rooms that each call the next.
+Setup: A hall of mirrors where each room contains a smaller copy.
+Win Condition: Write a recursive method with a base case to explore each nested room. The deepest mirror
+reveals the exit.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art hall of mirrors with nested smaller rooms receding into the distance, a robot
+hero stepping through, a glowing base-case door at the center, dark blue, neon teal
+reflections, 16-bit RPG style.
+CodeQuest Academy · Page 34 of 66
+
+--- PAGE 35 ---
+DAY 30
+Mini Project — The Toolkit of Methods
+■ W H AT  Y O U  W I L L L E A R N
+Month 2 finale! Build a small program where every feature is its own method — a clean, organised toolkit.
+Plan: write separate methods for each task (e.g. greet , add , findMax ), each doing one job well. 
+main  just calls them in order.
+■ C O D E  E X A M P L E
+static int findMax(int[] a) {
+int m = a[0];
+for (int x : a) if (x > m) m = x;
+return m;
+}
+// main calls findMax, add, greet...
+One job per method makes programs easy to read and fix.
+■ TO D AY ' S  G A M E  L E V E L
+★ BOSS: The Engineer's Workshop
+Goal: Assemble a machine where each part is a separate method.
+Setup: A complex machine must be built from clearly separated method-parts.
+Win Condition: Build several focused methods and call them from main. The machine runs and wins the
+Month-2 trophy.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art workshop with a large machine built from labelled modular gear-parts, a robot
+engineer hero assembling them, dark workshop, neon orange and teal glow, 16-bit RPG boss
+scene.
+CodeQuest Academy · Page 35 of 66
+
+--- PAGE 36 ---
+M O N T H  2  ·  W E E K  7
+Objects & Classes — Your Own Blueprints
+This week you stop using only Java's built-in tools and start designing your own. A class is a blueprint; an object
+is a real thing built from it. This is the heart of Java.
+DAY 31
+What is an Object? Thinking in Blueprints
+■ W H AT  Y O U  W I L L L E A R N
+Look around you — a dog, a car, a player in a game. Each is a thing that has information (a dog has a
+name and an age) and can do actions (a dog can bark). In Java we call such a thing an object.
+A class is the blueprint for an object. The blueprint is written once; from it you can build many objects. A
+'Dog' class can produce hundreds of dog objects, each with its own name.
+Today is about thinking in objects: for any thing, ask 'what does it know?' (fields) and 'what can it
+do?' (methods). That mindset is called Object-Oriented Programming.
+■ C O D E  E X A M P L E
+// A class is a blueprint. An object is a real
+// thing built from it.
+// Class: Dog  -> knows: name, age
+//             -> can do: bark()
+// Object: a real dog called "Rex", age 3
+Today we plan in words; tomorrow we write the real class.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Blueprint Vault
+Goal: Sort real things into their correct blueprint blueprints.
+Setup: A vault of glowing blueprint scrolls. Loose objects float around, unsorted.
+Win Condition: Match each object (a dog, a sword, a coin) to the class blueprint it came from. The vault locks
+in order and opens.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art vault room with glowing blueprint scrolls on the walls and floating objects (a
+dog, a sword, a coin) drifting toward their matching scroll, a robot architect hero
+pointing, dark navy stone, neon teal blueprint glow, 16-bit RPG aesthetic.
+CodeQuest Academy · Page 36 of 66
+
+--- PAGE 37 ---
+DAY 32
+Writing Your First Class with Fields
+■ W H AT  Y O U  W I L L L E A R N
+Time to build a real blueprint. You write class Dog { }  and inside the curly braces you list what a dog 
+knows. These pieces of information are called fields (also called attributes).
+A field looks like a variable declared inside the class: String name;  and int age; . Every dog object
+built from this blueprint will get its own copy of these fields.
+To build an actual object you use new : Dog rex = new Dog(); . Then you reach inside it with a dot: 
+rex.name = "Rex"; .
+■ C O D E  E X A M P L E
+class Dog {
+String name;
+int age;
+}
+public class Main {
+public static void main(String[] args) {
+        Dog rex = new Dog();
+        rex.name = "Rex";
+        rex.age = 3;
+System.out.println(rex.name + " is " + rex.age);
+    }
+}
+new Dog() builds one object; the dot reaches its fields.
+■ TO D AY ' S  G A M E  L E V E L
+★ The First Creation
+Goal: Build a living object from your own blueprint.
+Setup: An empty creation altar with a 'Dog' blueprint glowing above it.
+Win Condition: Define a Dog class with name and age fields, build one with new, set its values, and print
+them. The creature awakens.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art glowing creation altar with a blueprint hologram of a dog above it, sparks
+forming a pixel dog, a robot creator hero raising both hands, dark temple, neon cyan and
+purple energy, 16-bit RPG style.
+CodeQuest Academy · Page 37 of 66
+
+--- PAGE 38 ---
+DAY 33
+Methods Inside a Class — Giving Objects Actions
+■ W H AT  Y O U  W I L L L E A R N
+An object that only holds data is half-built. Real objects can do things. The actions an object can perform
+are written as methods inside the class.
+A method inside a class can freely use that object's own fields. A bark()  method inside Dog  can print
+the dog's own name  — it just says name  directly.
+You call an object's method with the dot: rex.bark(); . Each object runs the method using its own data,
+so rex.bark()  and fido.bark()  print different names.
+■ C O D E  E X A M P L E
+class Dog {
+String name;
+void bark() {
+System.out.println(name + " says Woof!");
+    }
+}
+// rex.bark();  ->  Rex says Woof!
+A method uses the object’s own fields automatically.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Voice of the Beast
+Goal: Teach your created object to perform an action on command.
+Setup: A silent pixel creature stands frozen until it learns to act.
+Win Condition: Add a bark() method to the Dog class that prints its own name, then call it. The creature
+moves and roars to life.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art pixel creature with a glowing speech bubble of a paw-print activating, a robot
+trainer hero giving a command gesture, gear icons orbiting the creature, dark arena, neon
+orange action glow, 16-bit RPG aesthetic.
+CodeQuest Academy · Page 38 of 66
+
+--- PAGE 39 ---
+DAY 34
+Constructors — Building Objects the Right Way
+■ W H AT  Y O U  W I L L L E A R N
+Setting every field by hand after new  is slow and easy to forget. A constructor fixes this: it is a special
+method that runs automatically the moment an object is built.
+A constructor has the same name as the class and no return type. You give it parameters and use them
+to fill the fields: Dog(String n, int a) { name = n; age = a; } .
+Now creating a fully-ready object is one clean line: Dog rex = new Dog("Rex", 3); . The constructor
+guarantees no field is left empty.
+■ C O D E  E X A M P L E
+class Dog {
+String name;
+int age;
+    Dog(String n, int a) {
+        name = n;
+        age = a;
+    }
+}
+// new Dog("Rex", 3)  -> ready instantly
+The constructor runs once, automatically, at creation.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Forge of Heroes
+Goal: Forge fully-equipped objects in a single strike.
+Setup: A forge that used to need many slow steps to make one hero.
+Win Condition: Add a constructor to the class so a hero is born complete with name and age in one new call.
+The forge fires instantly.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art glowing forge with a fully-armored pixel hero emerging complete from a single
+burst of flame, a robot blacksmith hero striking an anvil, dark workshop, neon orange and
+teal sparks, 16-bit RPG style.
+CodeQuest Academy · Page 39 of 66
+
+--- PAGE 40 ---
+DAY 35
+The this Keyword & Many Objects
+■ W H AT  Y O U  W I L L L E A R N
+Often the cleanest parameter name matches the field name. Dog(String name)  has a problem: which 
+name  means the field? The keyword this solves it.
+this  means 'this particular object'. Inside a constructor, this.name = name;  clearly says 'put the
+parameter into my own field'.
+You can build as many objects as you like from one class. Each is independent — changing rex  never
+touches fido . That is the power of blueprints.
+■ C O D E  E X A M P L E
+class Dog {
+String name;
+    Dog(String name) {
+this.name = name;
+    }
+}
+Dog a = new Dog("Rex");
+Dog b = new Dog("Fido");
+// a and b are fully separate objects
+this.name = the field; name = the parameter.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Army of Clones
+Goal: Build a squad of separate objects from one blueprint.
+Setup: A barracks needs five distinct guards, each with a unique name.
+Win Condition: Use this in the constructor and create five Dog/Guard objects with different names. Each
+guard appears separately and the squad forms.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art barracks courtyard with five distinct pixel guard robots standing in a row each
+with a different name tag, a robot commander hero inspecting them, dark stone fort, neon
+teal name labels, 16-bit RPG aesthetic.
+CodeQuest Academy · Page 40 of 66
+
+--- PAGE 41 ---
+M O N T H  2  ·  W E E K  8
+OOP Core — Safe, Organised Objects
+This week you make your objects professional: protecting their data, controlling access, sharing class-wide
+values, and organising code into packages. You finish with a full Bank Account program.
+DAY 36
+Encapsulation & Access Modifiers
+■ W H AT  Y O U  W I L L L E A R N
+Encapsulation means keeping an object's data safely inside it and controlling who can touch it. Right
+now anyone can write account.balance = -999  — that is dangerous.
+Access modifiers set the rules. public  means 'anyone can use this'. private  means 'only code
+inside this class can touch this'.
+The standard pattern: make fields private  so they cannot be damaged from outside, and provide safe 
+public  methods to work with them.
+■ C O D E  E X A M P L E
+class Account {
+private double balance;  // protected
+public void deposit(double amt) {
+if (amt > 0) balance += amt;
+    }
+}
+// account.balance = -999;  // NOT allowed
+private locks the field; public methods are the safe door.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Sealed Treasury
+Goal: Lock the treasure so only the proper door can reach it.
+Setup: A treasury where thieves currently grab gold directly through the wall.
+Win Condition: Make the gold field private and add a public guarded method to change it. The walls seal; only
+the door works.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art treasury room with a glowing vault, thick sealed walls marked 'private', a single
+guarded golden door marked 'public', a robot guardian hero standing watch, dark stone, neon
+teal lock glow, 16-bit RPG style.
+CodeQuest Academy · Page 41 of 66
+
+--- PAGE 42 ---
+DAY 37
+Getters and Setters — The Safe Doors
+■ W H AT  Y O U  W I L L L E A R N
+If fields are private , how does outside code read or change them? Through small public methods called
+getters and setters.
+A getter returns a field's value: public double getBalance() { return balance; } . A setter changes
+it — and can check the new value first.
+This is the real benefit: a setter can reject bad data. setAge  can refuse a negative age. The object
+protects its own correctness.
+■ C O D E  E X A M P L E
+class Player {
+private int health;
+public int getHealth() { return health; }
+public void setHealth(int h) {
+if (h >= 0 && h <= 100) health = h;
+    }
+}
+The setter guards the field against impossible values.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Gatekeeper Methods
+Goal: Allow access to a value only through inspecting guards.
+Setup: A health crystal that bad magic keeps setting to impossible numbers.
+Win Condition: Add a getter and a checking setter so health stays between 0 and 100. The crystal stabilises
+and glows steady.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art glowing health crystal behind two robot gatekeeper guards, one labelled 'get' one
+labelled 'set', a rejected red number bouncing off, dark vault, neon teal and red glow, 16-
+bit RPG aesthetic.
+CodeQuest Academy · Page 42 of 66
+
+--- PAGE 43 ---
+DAY 38
+Static Fields & Methods — Shared by the Whole Class
+■ W H AT  Y O U  W I L L L E A R N
+Normally each object has its own fields. But sometimes a value belongs to the whole class, not one
+object — like a counter of how many objects exist. That is a static field.
+A static field is shared by every object. If Dog  has static int count , all dogs see and share the same 
+count .
+A static method belongs to the class too — you call it on the class name: Math.sqrt(9) . It cannot use
+object fields, only static ones.
+■ C O D E  E X A M P L E
+class Dog {
+static int count = 0;
+    Dog() {
+        count++;  // shared across all dogs
+    }
+}
+new Dog(); new Dog();
+// Dog.count is now 2
+static = one shared copy for the entire class.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Shared Counter Stone
+Goal: Track a total that every object updates together.
+Setup: A magical stone must show how many heroes have entered the hall.
+Win Condition: Use a static count field that increases in the constructor. Every new hero raises the shared
+number on the stone.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art great hall with a large glowing counter stone showing a number, multiple pixel
+heroes walking in and the number rising, a robot scribe hero recording, dark hall, neon
+purple count glow, 16-bit RPG style.
+CodeQuest Academy · Page 43 of 66
+
+--- PAGE 44 ---
+DAY 39
+Packages & Organising Code
+■ W H AT  Y O U  W I L L L E A R N
+Big Java projects have many classes. A package is a folder that groups related classes — it keeps a
+project tidy, like sorting files into folders.
+At the top of a file you write package game.player; . To use a class from another package you import
+it, just as you imported java.util.Scanner .
+Packages also prevent name clashes: two packages can each have a Map  class without conflict,
+because their full names differ.
+■ C O D E  E X A M P L E
+// file: game/player/Hero.java
+package game.player;
+public class Hero {
+public String name;
+}
+// elsewhere: import game.player.Hero;
+A package is a labelled folder for related classes.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Library of Scrolls
+Goal: Sort scattered class-scrolls into labelled shelves.
+Setup: A messy library with class-scrolls dumped on the floor.
+Win Condition: Group related scrolls into named packages (shelves) and import one across rooms. The
+library becomes perfectly organised.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art grand library with labelled shelves, glowing class-scrolls flying into the
+correct shelf, a robot librarian hero directing them, dark wood interior, neon teal shelf
+labels, 16-bit RPG aesthetic.
+CodeQuest Academy · Page 44 of 66
+
+--- PAGE 45 ---
+DAY 40
+Mini Project — The Bank Account
+■ W H AT  Y O U  W I L L L E A R N
+Combine all of Week 8 into a safe BankAccount  class — a perfect test of encapsulation.
+Plan: a private double balance ; a constructor that sets a starting balance; deposit  and withdraw
+methods that check the amount; and a getBalance  getter. Withdrawals must never overdraw.
+■ C O D E  E X A M P L E
+class BankAccount {
+private double balance;
+    BankAccount(double start) { balance = start; }
+void deposit(double a) { if (a > 0) balance += a; }
+boolean withdraw(double a) {
+if (a > 0 && a <= balance) { balance -= a; return true; }
+return false;
+    }
+double getBalance() { return balance; }
+}
+A fully protected object: data safe, rules enforced.
+■ TO D AY ' S  G A M E  L E V E L
+★ BOSS: The Royal Treasury
+Goal: Run the kingdom's bank without ever losing or overdrawing gold.
+Setup: A treasury with careless clerks causing impossible negative balances.
+Win Condition: Build a BankAccount class with private balance and guarded deposit/withdraw. Every
+transaction stays valid and the treasury is certified.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art royal treasury with a glowing balance ledger, a robot banker hero stamping
+approved transactions, golden coins flowing safely through guarded gates, dark ornate
+vault, neon teal and gold glow, 16-bit RPG boss scene.
+CodeQuest Academy · Page 45 of 66
+
+--- PAGE 46 ---
+M O N T H  3  ·  W E E K  9
+Inheritance & Polymorphism
+This week you learn how classes can build on each other. Inheritance lets one class reuse another;
+polymorphism lets many different objects respond to the same command. This is where Java becomes
+powerful.
+DAY 41
+Inheritance — Building on an Existing Class
+■ W H AT  Y O U  W I L L L E A R N
+Imagine a Cat  class and a Dog  class. Both have a name  and both eat() . Copying that into both is
+wasteful. Inheritance lets a class reuse another.
+You write a general parent class Animal  with the shared parts. Then Dog  says extends Animal  — it
+automatically inherits every field and method of Animal.
+The child class can then add its own extras. Dog  gets name  and eat()  for free, and adds bark() .
+■ C O D E  E X A M P L E
+class Animal {
+String name;
+void eat() { System.out.println(name + " eats."); }
+}
+class Dog extends Animal {
+void bark() { System.out.println("Woof!"); }
+}
+// a Dog can eat() AND bark()
+extends = inherit everything, then add more.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Family Tree
+Goal: Pass a shared power down from parent to child.
+Setup: A glowing ancestor statue holds a power the descendants lack.
+Win Condition: Make a child class extend the Animal parent so it inherits eat(), then add its own skill. The
+family power flows down the tree.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art glowing family tree diagram with a parent 'Animal' node and child 'Dog' and 'Cat'
+nodes connected by light beams, a robot heir hero receiving a glowing power, dark blue
+background, neon teal connections, 16-bit RPG style.
+CodeQuest Academy · Page 46 of 66
+
+--- PAGE 47 ---
+DAY 42
+super and Overriding Methods
+■ W H AT  Y O U  W I L L L E A R N
+A child sometimes needs to change an inherited method. Writing a method with the same name in the
+child overrides the parent's version. Mark it with @Override  for clarity.
+But what if the child wants the parent's version plus a little more? The keyword super means 'the parent'. 
+super.eat()  runs the parent's eat() , then the child adds its own lines.
+super(...)  also calls the parent's constructor — useful so the child does not re-write the parent's setup.
+■ C O D E  E X A M P L E
+class Cat extends Animal {
+    @Override
+void eat() {
+super.eat();          // do parent's part
+System.out.println("...delicately.");
+    }
+}
+Override to replace; super to also reuse the parent.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Improved Spell
+Goal: Upgrade an inherited ability without losing its core.
+Setup: A descendant mage has a weak inherited spell that needs an upgrade.
+Win Condition: Override the inherited method, call super inside it to keep the original effect, then add a new
+effect. The spell evolves.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art robot mage hero casting a spell that glows brighter as a faint parent-spell layer
+merges with a new bright layer, dark arcane chamber, neon purple and teal magic, 16-bit RPG
+aesthetic.
+CodeQuest Academy · Page 47 of 66
+
+--- PAGE 48 ---
+DAY 43
+Polymorphism — One Command, Many Forms
+■ W H AT  Y O U  W I L L L E A R N
+Polymorphism means 'many forms'. Because Dog  and Cat  are both Animal s, you can treat them all
+as Animal  — yet each behaves in its own way.
+You can write Animal a = new Dog(); . The variable's type is Animal , but the real object is a Dog .
+Calling a.eat()  runs the Dog's version.
+This lets you store mixed objects in one array and loop over them — each responds correctly. One line of
+code, many behaviours.
+■ C O D E  E X A M P L E
+Animal[] zoo = { new Dog(), new Cat() };
+for (Animal a : zoo) {
+    a.eat();   // each runs its OWN version
+}
+Same call, different result — the object decides.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Shapeshifter's Trial
+Goal: Give one order that every different creature obeys in its own way.
+Setup: A trial arena holds many creature-types waiting for a single command.
+Win Condition: Store mixed Animal objects in one array and call the same method on each. Every creature
+reacts uniquely and the trial passes.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art arena with a robot commander hero giving one glowing command, and a row of
+different creatures each reacting in a unique way, dark coliseum, neon teal command beam,
+16-bit RPG style.
+CodeQuest Academy · Page 48 of 66
+
+--- PAGE 49 ---
+DAY 44
+Abstract Classes — Blueprints That Must Be Finished
+■ W H AT  Y O U  W I L L L E A R N
+Sometimes a parent class is too general to ever be a real object. A plain Animal  with no species makes
+no sense. Mark such a class abstract: it cannot be built directly with new .
+An abstract class can contain an abstract method — a method with a name but no body: 
+abstract void makeSound(); . It is a promise: 'every child must supply this'.
+This forces every child to fill in the missing behaviour. The compiler will not let a child forget. It is a
+blueprint with required blanks.
+■ C O D E  E X A M P L E
+abstract class Animal {
+abstract void makeSound();   // no body
+}
+class Dog extends Animal {
+void makeSound() {           // must fill it
+System.out.println("Woof!");
+    }
+}
+abstract = a blueprint with mandatory blanks to fill.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Unfinished Blueprint
+Goal: Complete the required blanks of a partial blueprint.
+Setup: An abstract blueprint glows with empty slots that block construction.
+Win Condition: Extend the abstract class and provide every required method. The blueprint completes and
+the creature can finally be built.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art glowing blueprint hologram with empty slots being filled by a robot architect
+hero, the finished design solidifying into a creature, dark workshop, neon cyan blueprint
+glow, 16-bit RPG aesthetic.
+CodeQuest Academy · Page 49 of 66
+
+--- PAGE 50 ---
+DAY 45
+The Object Class & toString
+■ W H AT  Y O U  W I L L L E A R N
+Secret fact: in Java every class secretly extends a built-in class called Object . So every object already
+has a few methods for free.
+One of them is toString()  — it decides how an object looks when printed. By default it prints an ugly
+code. You can override it to print something readable.
+Once overridden, System.out.println(myDog)  shows your friendly text automatically. Clean output for
+free.
+■ C O D E  E X A M P L E
+class Dog {
+String name;
+    @Override
+public String toString() {
+return "Dog(" + name + ")";
+    }
+}
+// println(dog)  ->  Dog(Rex)
+Override toString to control how an object prints.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Name Above the Head
+Goal: Give every object a clear, readable identity tag.
+Setup: Objects in the world show ugly machine codes instead of names.
+Win Condition: Override toString in your class to return a friendly description. Every object now displays a
+clear floating name.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art creatures each with a clear glowing name tag above its head replacing scrambled
+code symbols, a robot herald hero pointing up, dark field, neon teal name labels, 16-bit
+RPG style.
+CodeQuest Academy · Page 50 of 66
+
+--- PAGE 51 ---
+M O N T H  3  ·  W E E K  1 0
+Interfaces & Collections
+This week you learn interfaces (pure contracts of ability) and Java's flexible collections — ArrayList and
+HashMap — that grow and shrink as you need. You finish with a Contact Book.
+DAY 46
+Interfaces — Pure Contracts of Ability
+■ W H AT  Y O U  W I L L L E A R N
+An interface is a list of abilities with no code inside — a pure contract. It says 'any class that signs me
+must be able to do these things'.
+You write interface Swimmer { void swim(); } . A class then implements Swimmer  and is required to
+write a real swim()  method.
+The big advantage: a class can implement many interfaces, while it can only extend one parent.
+Interfaces describe what an object can do, regardless of what it is.
+■ C O D E  E X A M P L E
+interface Swimmer {
+void swim();
+}
+class Duck implements Swimmer {
+public void swim() {
+System.out.println("Duck paddles!");
+    }
+}
+implements = sign the contract and provide the methods.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Guild Contracts
+Goal: Sign ability-contracts and prove you can fulfil them.
+Setup: A guild hall offers ability-contracts: 'Swimmer', 'Flyer', 'Climber'.
+Win Condition: Make a class implement an interface and write the required method. The contract glows as
+signed and the guild accepts the hero.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art guild hall with glowing contract scrolls labelled 'Swimmer' and 'Flyer', a robot
+adventurer hero signing one with a quill of light, dark wood interior, neon teal contract
+glow, 16-bit RPG aesthetic.
+CodeQuest Academy · Page 51 of 66
+
+--- PAGE 52 ---
+DAY 47
+ArrayList — A List That Grows
+■ W H AT  Y O U  W I L L L E A R N
+Arrays have a fixed size — once made, they cannot grow. Real programs need flexible lists. Java's 
+ArrayList  grows and shrinks automatically.
+You create one with ArrayList<String> names = new ArrayList<>(); . The part in <>  says what kind
+of items it holds.
+Useful methods: add()  to put an item in, get(i)  to read one, remove(i)  to delete one, and size()
+for the count.
+■ C O D E  E X A M P L E
+import java.util.ArrayList;
+ArrayList<String> party = new ArrayList<>();
+party.add("Knight");
+party.add("Mage");
+System.out.println(party.get(0));
+System.out.println("Size: " + party.size());
+An ArrayList resizes itself — no fixed length.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Endless Satchel
+Goal: Carry a bag of items that has no fixed capacity.
+Setup: A hero's old bag keeps overflowing because its size is fixed.
+Win Condition: Use an ArrayList to add and remove items freely. The magic satchel stretches to fit everything
+collected.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art glowing magical satchel stretching as items float into it, a robot adventurer
+hero packing freely, dark camp at night, neon teal expansion glow, 16-bit RPG style.
+CodeQuest Academy · Page 52 of 66
+
+--- PAGE 53 ---
+DAY 48
+HashMap — Pairs of Key and Value
+■ W H AT  Y O U  W I L L L E A R N
+Sometimes you need to look something up by a label, not a number. A HashMap stores key → value
+pairs — like a dictionary where you look up a word to find its meaning.
+Create one with HashMap<String,Integer> scores = new HashMap<>(); . put(key, value)  stores a
+pair; get(key)  fetches the value.
+It is instant and perfect for things like name → score, item → price, or player → level.
+■ C O D E  E X A M P L E
+import java.util.HashMap;
+HashMap<String,Integer> score = new HashMap<>();
+score.put("Sara", 50);
+score.put("Tom", 30);
+System.out.println(score.get("Sara"));
+Look things up by a meaningful key, not a number.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Keyring of Doors
+Goal: Match each key to the door it unlocks.
+Setup: A corridor of doors, each needing a specifically named key.
+Win Condition: Store key->door pairs in a HashMap and look up the right key for each door. Every door
+opens in turn.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art corridor of glowing doors with floating labelled keys connecting by light lines
+to matching doors, a robot keeper hero holding a keyring, dark hall, neon purple key glow,
+16-bit RPG aesthetic.
+CodeQuest Academy · Page 53 of 66
+
+--- PAGE 54 ---
+DAY 49
+Generics — Telling Collections What They Hold
+■ W H AT  Y O U  W I L L L E A R N
+You have already used <String>  and <Integer>  inside angle brackets. That feature is called 
+generics.
+Generics let a collection know exactly what type it stores. An ArrayList<Integer>  will only accept
+integers — Java stops you putting wrong things in before the program runs.
+This catches mistakes early and means you never have to guess what type comes out. Type safety is a
+quiet but huge helper.
+■ C O D E  E X A M P L E
+ArrayList<Integer> nums = new ArrayList<>();
+nums.add(10);
+// nums.add("hello");  // compiler ERROR
+int first = nums.get(0);  // safely an int
+Generics lock a collection to one safe type.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Sorting Gate
+Goal: Allow only the correct type of item through a gate.
+Setup: A gate that must accept only gems and reject everything else.
+Win Condition: Use a generic collection typed to one item kind. Wrong items bounce off; only the correct type
+passes.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art magical gate with a glowing type-symbol, correct gem items passing through and
+wrong items bouncing off a shield, a robot inspector hero supervising, dark passage, neon
+teal filter glow, 16-bit RPG style.
+CodeQuest Academy · Page 54 of 66
+
+--- PAGE 55 ---
+DAY 50
+Mini Project — The Contact Book
+■ W H AT  Y O U  W I L L L E A R N
+Combine interfaces and collections into a working ContactBook .
+Plan: a Contact  class with name and phone (use a constructor and toString ); store many contacts in
+an ArrayList<Contact> ; add methods to add a contact, print all, and find one by name with a loop.
+■ C O D E  E X A M P L E
+class Contact {
+String name, phone;
+    Contact(String n, String p) { name = n; phone = p; }
+public String toString() { return name + ": " + phone; }
+}
+ArrayList<Contact> book = new ArrayList<>();
+book.add(new Contact("Sara", "12345"));
+for (Contact c : book) System.out.println(c);
+Custom objects living inside a flexible collection.
+■ TO D AY ' S  G A M E  L E V E L
+★ BOSS: The Grand Directory
+Goal: Manage the kingdom's entire roster of citizens.
+Setup: A vast directory hall with names that must be added and searched fast.
+Win Condition: Build a ContactBook that stores Contact objects in an ArrayList and searches by name. The
+directory is complete and certified.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art grand directory hall with a glowing roster book, floating contact cards, a robot
+archivist hero searching with a beam of light, dark archive, neon teal and gold glow, 16-
+bit RPG boss scene.
+CodeQuest Academy · Page 55 of 66
+
+--- PAGE 56 ---
+M O N T H  3  ·  W E E K  11
+Exceptions & Files
+This week your programs learn to handle problems gracefully instead of crashing, and to save and load real
+data from files. These skills make a program trustworthy.
+DAY 51
+Exceptions & try-catch
+■ W H AT  Y O U  W I L L L E A R N
+Sometimes things go wrong while a program runs — dividing by zero, or reading a number that is not
+there. Java calls such a problem an exception. Unhandled, it crashes the program.
+You protect risky code with a try-catch block. Code that might fail goes in try ; if an exception happens,
+Java jumps to catch  instead of crashing.
+Inside catch  you handle it kindly — show a friendly message and keep going. The program survives the
+storm.
+■ C O D E  E X A M P L E
+try {
+int x = 10 / 0;        // risky
+} catch (ArithmeticException e) {
+System.out.println("Cannot divide by zero!");
+}
+System.out.println("Program continues.");
+try the risky part; catch handles trouble safely.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Safety Net
+Goal: Cross a dangerous gap without falling to a crash.
+Setup: A crumbling bridge over a pit; one wrong step normally ends the run.
+Win Condition: Wrap the risky crossing in try-catch so a slip is caught by a net. The hero recovers and walks
+on.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art crumbling bridge over a dark pit with a glowing safety net catching a robot hero
+mid-fall, neon teal net light, dark canyon, 16-bit RPG aesthetic.
+CodeQuest Academy · Page 56 of 66
+
+--- PAGE 57 ---
+DAY 52
+Throwing & Custom Exceptions
+■ W H AT  Y O U  W I L L L E A R N
+You can also raise your own exception when your code detects something wrong, using throw . throw
+new IllegalArgumentException("Age cannot be negative"); .
+You can even design your own exception type by extending Exception . class OutOfGoldException
+extends Exception { }  describes a problem in your game's language.
+Throwing a clear, well-named exception tells whoever uses your code exactly what went wrong — far
+better than a silent wrong answer.
+■ C O D E  E X A M P L E
+class OutOfGoldException extends Exception {}
+void buy(int cost, int gold) throws OutOfGoldException {
+if (cost > gold) throw new OutOfGoldException();
+System.out.println("Purchase complete!");
+}
+throw raises a problem; custom types name it clearly.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Alarm Bell
+Goal: Sound a clear, specific alarm the moment a rule is broken.
+Setup: A vault where vague warnings confuse the guards.
+Win Condition: Throw a custom, well-named exception when a rule breaks. The exact alarm rings and guards
+know precisely what happened.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art vault with a glowing alarm bell labelled with a clear warning name, a robot guard
+hero reacting instantly, dark stone room, neon orange alert glow, 16-bit RPG style.
+CodeQuest Academy · Page 57 of 66
+
+--- PAGE 58 ---
+DAY 53
+Reading Data from Files
+■ W H AT  Y O U  W I L L L E A R N
+Programs that forget everything when they close are limited. Files let a program save and load real data
+that lasts.
+To read a file, Java offers tools like Scanner  pointed at a File , or BufferedReader . You open the file,
+read it line by line in a loop, and close it.
+File work can fail — the file might be missing — so it always lives inside try-catch . Today you read a
+saved list of high scores back into your program.
+■ C O D E  E X A M P L E
+import java.io.File;
+import java.util.Scanner;
+try {
+Scanner f = new Scanner(new File("scores.txt"));
+while (f.hasNextLine()) {
+System.out.println(f.nextLine());
+    }
+    f.close();
+} catch (Exception e) {
+System.out.println("File not found.");
+}
+Read a file line by line inside a safe try-catch.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Ancient Records
+Goal: Recover knowledge stored in an old scroll.
+Setup: A dusty archive holds a scroll of past hero scores.
+Win Condition: Open the scroll-file and read each line into the program. The lost records glow back to life on
+screen.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art dusty archive with a glowing ancient scroll unrolling, lines of text rising into
+a floating screen, a robot scholar hero reading, dark library, neon teal text glow, 16-bit
+RPG aesthetic.
+CodeQuest Academy · Page 58 of 66
+
+--- PAGE 59 ---
+DAY 54
+Writing Data to Files
+■ W H AT  Y O U  W I L L L E A R N
+Reading is half the story — programs also need to save. Writing to a file stores data so it survives after
+the program ends.
+Java's FileWriter  (often wrapped in PrintWriter ) lets you write text. You open it, write  or 
+println  your lines, and — very important — close()  it so the data is truly saved.
+Now your game can save a high score and load it next time. The program finally has a memory.
+■ C O D E  E X A M P L E
+import java.io.PrintWriter;
+try {
+    PrintWriter w = new PrintWriter("scores.txt");
+    w.println("Sara 500");
+    w.println("Tom 320");
+    w.close();   // saves the file
+} catch (Exception e) {
+System.out.println("Could not save.");
+}
+Write lines, then close() to lock in the saved file.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Memory Stone
+Goal: Carve progress into stone so it is never forgotten.
+Setup: A hero's deeds vanish each time the world resets.
+Win Condition: Write the progress to a file and close it. The memory stone permanently records the
+achievement.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art glowing memory stone with text being carved into it by a beam of light, a robot
+engraver hero writing, dark shrine, neon teal carving glow, 16-bit RPG style.
+CodeQuest Academy · Page 59 of 66
+
+--- PAGE 60 ---
+DAY 55
+Enhanced for & Iterators
+■ W H AT  Y O U  W I L L L E A R N
+You have used the enhanced for-each loop: for (String s : list) . It walks through every item in a
+collection cleanly, without an index.
+Behind the scenes Java uses an iterator — an object that knows how to step through a collection one
+item at a time. The for-each loop is just a tidy shortcut for it.
+When you need to remove items while looping, you use the iterator directly with iterator.remove() ,
+which is the safe way to delete during a walk.
+■ C O D E  E X A M P L E
+for (String name : party) {
+System.out.println(name);
+}
+// behind the scenes: an Iterator steps through it
+for-each is a clean shortcut over an iterator.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Roll Call
+Goal: March through every member of a group in order.
+Setup: A squad must be counted off one by one without missing anyone.
+Win Condition: Use a for-each loop to visit every collection item exactly once. The roll call completes
+perfectly.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art parade ground with a robot officer hero walking down a line of squad members, a
+glowing pointer touching each in turn, dark fort, neon teal step markers, 16-bit RPG
+aesthetic.
+CodeQuest Academy · Page 60 of 66
+
+--- PAGE 61 ---
+M O N T H  3  ·  W E E K  1 2
+Final Quest — Build Your Capstone
+The final week! You plan, build, and polish a complete Java program that uses everything you have learned,
+then graduate as a Java developer.
+DAY 56
+Planning a Real Program
+■ W H AT  Y O U  W I L L L E A R N
+Professionals plan before they type. Today you design a complete program on paper first — no code yet.
+Ask three questions: What classes do I need? (the nouns: Item, Inventory), What can each do? (the
+methods), and How do they connect?
+Break the big goal into small, ordered steps. A clear plan turns a scary project into a list of easy pieces.
+This is the single most valuable habit of a developer.
+■ C O D E  E X A M P L E
+// PLAN: Inventory Management System
+// Class Item: name, quantity, price
+// Class Inventory: ArrayList<Item>
+//   - addItem(), removeItem(), search()
+//   - printReport(), totalValue()
+// main: menu loop calling those methods
+A written plan turns a big project into small steps.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Architect's Table
+Goal: Draw the full map of your final quest before building.
+Setup: A planning table with a blank map of the capstone project.
+Win Condition: List every class, method, and step on the map. The plan glows complete and the build phase
+unlocks.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art architect's table with a glowing project map, class and method notes pinned
+around it, a robot planner hero drawing connecting lines, dark study, neon teal blueprint
+glow, 16-bit RPG style.
+CodeQuest Academy · Page 61 of 66
+
+--- PAGE 62 ---
+DAY 57
+Building the Core Logic
+■ W H AT  Y O U  W I L L L E A R N
+With the plan ready, you build the core first — the classes and the most important methods. Do not try to
+do everything at once.
+Write one class, test it, then the next. Make the Item  class work before the Inventory  class. Build, run,
+check, repeat.
+Small frequent tests catch mistakes while they are still tiny and easy to fix. A program grown piece by
+piece is a program that works.
+■ C O D E  E X A M P L E
+class Item {
+String name; int qty; double price;
+    Item(String n, int q, double p) {
+        name = n; qty = q; price = p;
+    }
+double value() { return qty * price; }
+}
+Build one class, test it, then move to the next.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Engine Room
+Goal: Assemble and test the core machine piece by piece.
+Setup: A great machine must be built one tested part at a time.
+Win Condition: Build and verify each core class in order. The engine hums to life as every part passes its test.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art engine room with a robot engineer hero fitting glowing tested parts into a large
+machine one by one, dark industrial hall, neon teal test-pass glow, 16-bit RPG aesthetic.
+CodeQuest Academy · Page 62 of 66
+
+--- PAGE 63 ---
+DAY 58
+Polishing & Handling Mistakes
+■ W H AT  Y O U  W I L L L E A R N
+A working program is good; a polished one is great. Polishing means making it pleasant and hard to
+break.
+Add clear messages so the user always knows what is happening. Wrap risky parts in try-catch .
+Check user input before trusting it. Use neat formatting in your output.
+Try to break your own program on purpose — type wrong things — and fix whatever crashes. A program
+that survives misuse is a finished program.
+■ C O D E  E X A M P L E
+try {
+int choice = Integer.parseInt(input);
+// ...act on the menu choice...
+} catch (NumberFormatException e) {
+System.out.println("Please type a number.");
+}
+Guard every input; a polished program rarely crashes.
+■ TO D AY ' S  G A M E  L E V E L
+★ The Final Inspection
+Goal: Storm-test your creation until nothing can break it.
+Setup: An inspection chamber bombards the program with bad input.
+Win Condition: Add guards and friendly messages so every bad input is handled. The program passes
+inspection flawlessly.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art inspection chamber with a robot tester hero shielding a glowing program from
+incoming error-bolts, dark lab, neon teal shield glow, 16-bit RPG style.
+CodeQuest Academy · Page 63 of 66
+
+--- PAGE 64 ---
+DAY 59
+Capstone — The Inventory Management System
+■ W H AT  Y O U  W I L L L E A R N
+Today you assemble the full Inventory Management System — your Java capstone.
+It brings together everything: an Item  class with encapsulation, an Inventory  class holding an 
+ArrayList<Item> , methods to add, remove, search and report, a menu loop, file save/load, and try-
+catch protection.
+Take your time. Build it from your plan, test each part, and watch a real, complete program come together
+in your hands.
+■ C O D E  E X A M P L E
+class Inventory {
+ArrayList<Item> items = new ArrayList<>();
+void add(Item i) { items.add(i); }
+double totalValue() {
+double t = 0;
+for (Item i : items) t += i.value();
+return t;
+    }
+}
+Every Java skill, working together in one program.
+■ TO D AY ' S  G A M E  L E V E L
+★ BOSS: The Grand Trading Company
+Goal: Run a full trading company that never loses track of stock.
+Setup: A vast warehouse needs a complete, reliable management system.
+Win Condition: Deliver a working Inventory Management System with classes, collections, files and error
+handling. The company thrives and the final trophy is won.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art enormous warehouse with glowing inventory screens, a robot manager hero
+overseeing flawless operations, shelves of organised goods, dark hall, neon teal and gold
+triumph glow, 16-bit RPG boss scene.
+CodeQuest Academy · Page 64 of 66
+
+--- PAGE 65 ---
+DAY 60
+Graduation — You Are a Java Developer
+■ W H AT  Y O U  W I L L L E A R N
+You did it. Twelve weeks ago System.out.println  was new. Now you build classes, use inheritance and
+interfaces, handle errors, and save files.
+You have learned to think like a developer: plan first, build in small tested pieces, and handle problems
+calmly. That mindset matters more than any single keyword.
+Keep going: build your own projects, read other people's code, and never stop being curious. Welcome to
+the world of Java development, Grandmaster.
+■ C O D E  E X A M P L E
+public class Main {
+public static void main(String[] args) {
+System.out.println("Java journey: complete.");
+System.out.println("The adventure continues!");
+    }
+}
+The end of the course — the start of your journey.
+■ TO D AY ' S  G A M E  L E V E L
+★ GRADUATION: The Grandmaster's Crown
+Goal: Claim your title and step onto the path of real projects.
+Setup: A grand hall of light; all twelve week-trophies are displayed.
+Win Condition: Walk the hall of trophies and reach the throne. The Grandmaster Coder crown is placed on
+your hero. The world opens for new quests.
+■ I M A G E  G E N E R AT I O N  P R O M P T
+Paste this into any AI image generator to create today's level art:
+Pixel-art grand graduation hall with twelve glowing trophies lining a path to a throne, a
+robot hero receiving a brilliant crown, fireworks of cyan and gold pixels, triumphant 16-
+bit RPG finale scene.
+CodeQuest Academy · Page 65 of 66
+
+--- PAGE 66 ---
+Quest Complete
+You have reached the end of the Java 3-Month Quest.
+Sixty days ago you started from zero. You now understand variables, loops, decisions, collections, functions,
+objects, and how to build complete programs. More importantly, you have learned to think like a programmer.
+Keep the streak alive: pick a small personal project — a quiz game, a budget tracker, a tiny tool you wish existed
+— and build it. Real growth comes from building things you care about.
+Your next quest: continue with the CodeQuest Python track, then move into the platform's RPG Sandbox to build
+full games with your code. The adventure is only beginning.
+★ Congratulations, CodeQuest Java Graduate ★
+CodeQuest Academy · Page 66 of 66
